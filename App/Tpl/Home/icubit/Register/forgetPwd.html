@@ -1,0 +1,20 @@
+<div class="header">
+	<div class="header-logo"></div>
+</div>
+<div class="content" style="height:700px;background-image:url(__PUBLIC__/Uploads/Images/Background/<{$backgroudImages}>);">
+	<div class="content-login" style="height:auto;">
+    	<div class="content-login-words"><h3>填写注册的邮箱获取密码</h3></div>
+        <div class="content-login-form">
+            <form  name = "frm" action = "__URL__/doPwd" method = "post">
+                <div class="content-login-form-box">
+                    <input type="email" id="identity" name="email" placeholder="邮箱">
+                    <span class="stats1">请输入邮箱</span>
+                </div>
+                <div class="content-login-button">
+                    <input type="submit" value="确 认" class="green-btn"> 
+                    <a href="__APP__/Login/login">想起密码？点击登录</a>
+                </div>
+            </form>
+		</div>
+	</div>
+</div>

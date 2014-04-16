@@ -1,0 +1,18 @@
+<include file="Public:public_header" />
+<div class="yf-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="yf-panel">
+            <ul class="nav nav-pills nav-stacked text-center">
+              <volist name="menulist" id='vo'>
+               <li 
+                <if condition="$vo['menu'] eq $menu">class="active" <else /> class=""</if>
+                ><a href="<{$vo.href}>"><{$vo.name}></a>
+                </li>
+                
+              </volist>
+            </ul>
+          </div>
+          </div>
+   

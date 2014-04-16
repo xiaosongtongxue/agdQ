@@ -1,0 +1,38 @@
+<include file="tab" />
+<div class="tab-pane active" id="tab1">
+      <table class="table table-condensed table-hover table-bordered" id="list">
+              <thead>
+              <tr>                  
+                  <th colspan="8">
+                  <a class="btn" href="__URL__/addGroup">添加用户组</a>       
+                  </th>
+                                 
+                </tr>
+                <tr>
+                  <th><input type="checkbox" id="checkAll" onclick="admin.checkAll(this)"></th>
+                  <th>GID</th>
+                  <th>用户组昵称</th>
+                  <th>用户组图标</th>
+                  <th>注册时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody >
+              <volist name='group' id='vo'> 
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><{$vo.id}></td>
+                  <td><{$vo.name}></td>
+                  <td><{$vo.icon}></td>
+                  <td><{$vo.ctime}></td>
+                  <td>编辑|禁用|删除|
+                  <a data-trigger="modal" href="__URL__/moveGroup?gid=<{$vo.id}>" data-title="权限组配置">权限组配置</a>
+                  
+                	</td>
+                </tr>
+                </volist>
+               
+              </tbody>
+            </table>
+</div>
+

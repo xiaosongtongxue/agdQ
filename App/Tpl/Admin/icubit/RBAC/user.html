@@ -1,0 +1,46 @@
+<include file="tab" />
+<div class="tab-pane active" id="tab1">
+      <table class="table table-condensed table-hover table-bordered" id="list">
+              <thead>
+              <tr>                  
+                  <th colspan="8">
+                  <button class="btn">搜索用户</button>
+                  <a href="#myModal" role="button" class="btn" data-toggle="modal">转移用户组</a>
+                  <a class="btn" href="__URL__/addUser">添加用户</a>
+
+                  </th>
+                                 
+                </tr>
+                <tr>
+                  <th><input type="checkbox" id="checkAll" onclick="admin.checkAll(this)"></th>
+                  <th>UID</th>
+                  <th>昵称</th>
+                  <th>学号</th>
+                  <th>邮箱</th>
+                  <th>用户组</th>
+                  <th>注册时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody >
+              <volist name='user' id='vo'> 
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><{$vo.uid}></td>
+                  <td><{$vo.nickname}></td>
+                  <td><{$vo.stu_id}></td>
+                  <td><{$vo.email}></td>
+                  <td><{$vo.group}></td>
+                  <td><{$vo.reg_time}></td>
+                  
+                  <td>编辑|禁用|删除|
+                  <a data-trigger="modal" href="__URL__/moveGroup?uid=<{$vo.uid}>" data-title="转移用户组">转移到</a>
+                  
+                	</td>
+                </tr>
+                </volist>
+               
+              </tbody>
+            </table>
+</div>
+

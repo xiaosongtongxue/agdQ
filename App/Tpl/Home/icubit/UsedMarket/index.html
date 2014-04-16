@@ -1,0 +1,27 @@
+<include file="Public:public_header" />
+<div class="container" style="margin-top:60px;">
+<div class="hero-unit">
+  <h1>二手市场</h1>
+  <p>我们都有一个价，名字叫中国，箱底姐妹多又多，景色有不错，家里盼着两条龙啊，是长江与黄河，我们的大中国啊，好大的一个价</p>
+  <p>
+    <a class="btn btn-primary btn-large">
+     更多
+    </a>
+  </p>
+</div>
+  <div class="row">
+    <div class="span8">
+    	<div style=" background-color:#D2D2D2; line-height:30px; padding:5px 60px; ">过滤：</div>	
+        <{:W('FeedList',array('cid'=>$cid,'page'=>$page,'feed_type'=>$feed_type))}> 
+    </div>
+    <div class="span4"> 
+      <!--个人相关介绍显示部分start--> 
+      <{:W('UserInfo',array('uid'=>$uid))}> 
+      <!--个人信息显示部分end--> 
+      <!--活动显示部分start--> 
+      <include file="Index:activity" /> 
+      <!--活动显示部分end--> 
+    </div>
+  </div>
+</div>
+<include file="Public:public_footer" /> 

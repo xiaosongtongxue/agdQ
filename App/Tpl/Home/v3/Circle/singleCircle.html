@@ -1,0 +1,60 @@
+<include file="Public:public_header" />
+<div class="container" style="margin-top:60px;">
+	<div class="row">
+		<div class="span12">
+			<div class="row">
+				<div class="span8">
+					<div class="hero-unit">
+						<h1><{$circle_info['user_circle_name']}></h1>
+						<div class="row">
+							<div class="span4">
+								<img alt="140x140" src="<{$circle_info['user_circle_icon']}>" />
+							</div>
+							<div class="span8">
+								<div class="media">
+							 		<a href="<{$creator_user['user_url']}>" class="pull-left"><img src="<{$creator_user['avatar_small']}>" class="media-object" alt='' /></a>
+									<div class="media-body">
+										<h4 class="media-heading"><{$creator_user['nickname']}></h4>
+										<strong>个人简介:</strong><{$creator_user['about']}>
+									</div>
+								</div>
+								<strong>圈子介绍:</strong><p><{$circle_info['user_circle_intro']}></p>
+								<strong>创建于:</strong><{$circle_info['ctime']|date="Y-m-d",###}>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="span4">
+					<!--<div class="media well">
+						 <a href="#" class="pull-left"><img src="img/a_002.jpg" class="media-object" alt='' /></a>
+						<div class="media-body">
+							<h4 class="media-heading">
+								嵌入媒体标题
+							</h4> 请尽量使用HTML5兼容的视频格式和视频代码实现视频播放, 以达到更好的体验效果.
+						</div>
+					</div>-->
+					
+					<h3>
+						圈中好友：
+					</h3>
+					
+					<volist name="ex_all_user_info" id="vo">
+						<div class="media">
+							 <a href="<{$vo.user_url}>" class="pull-left"><img src="<{$vo.avatar_small}>" class="media-object" alt='' /></a>
+							<div class="media-body">
+								<h4 class="media-heading"><{$vo.nickname}></h4>
+							</div>
+						</div>
+					</volist>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script> 
+$(function(){
+
+})
+</script> 
+<include file="Public:public_footer" /> 

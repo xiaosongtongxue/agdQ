@@ -1,0 +1,157 @@
+<include file="Public:public_header" />
+<div class="yf-header">
+	<div class="container">
+		<div class="row" id="allList">
+			<div id="one" class="col-md-3">
+			</div>
+			<div id="two" class="col-md-3">
+			</div>
+			<div id="three" class="col-md-3">
+			</div>
+		</div>
+		<div id="loading" style="text-align:center;"> 
+			<img src="__PUBLIC__/Images/loading_cir.gif" /> 
+		</div> 
+	</div>
+</div>
+<script> 
+window.onload = function () { 
+	//初始参数 
+	var reset = 0; //某些滚动条会触发三次scroll事件 用这个解决  
+	var divAll = $("allList"); 
+	// 瀑布流的列数
+	var childArr = getChildNodes(divAll);
+	// 一次加载行数
+	var bigDivCount = 4;
+	// 瀑布流的列数对应的id
+	var engNum = ['one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];
+	var div = new Array();
+	for(var i = 0; i < childArr.length;i++){
+		div[i] = $(engNum[i]);
+	}
+	var loading = $("loading");
+	//loading的高度
+	var loadingHeight = loading.offsetHeight;
+	//得到浏览器的名称
+	var browser = getBrowser(); 
+	var OsObj = ( browser == "Firefox" ) ? document.documentElement : document.body;
+	// 加载的次数
+	var loadingNum = 1;
+	var ran = 0;
+	//数据源 
+	var imgArray = []; //img数组 也就是数据来源 
+	var textArray = []; //img底下的文字和img对应 
+	imgArray[0] = "http://files.jb51.net/file_images/article/201211/960bda11tw1dnw504ga3vj.jpg"; 
+	imgArray[1] = "http://files.jb51.net/file_images/article/201211/771f735ctw1dnw5gv6dmcj.jpg"; 
+	imgArray[2] = "http://files.jb51.net/file_images/article/201211/5d5e9605gw1dnw4o6uk3gj.jpg"; 
+	imgArray[3] = "http://files.jb51.net/file_images/article/201211/6d9cb0b8jw1dnw5m0y5yrj.jpg"; 
+	imgArray[4] = "http://files.jb51.net/file_images/article/201211/62dae985gw1dnzc4mwvm5j.jpg"; 
+	imgArray[5] = "http://files.jb51.net/file_images/article/201211/8d95fb4cgw1dnzec2c6cdj.jpg"; 
+	imgArray[6] = "http://files.jb51.net/file_images/article/201211/872bccc8jw1dnzch2aqtkj.jpg"; 
+	imgArray[7] = "http://files.jb51.net/file_images/article/201211/5b104465tw1dnzdlozp6tj.jpg"; 
+	imgArray[8] = "http://files.jb51.net/file_images/article/201211/6de170f6jw1dnzl7jbzidj.jpg"; 
+	imgArray[9] = "http://files.jb51.net/file_images/article/201211/6a93dbfbgw1dnzeiu1draj.jpg"; 
+	imgArray[10] = "http://files.jb51.net/file_images/article/201211/6ea59a74jw1dnzm0wbf7vj.jpg"; 
+	imgArray[11] = "http://files.jb51.net/file_images/article/201211/48bf076ejw1dnzexjhl6dj.jpg"; 
+	imgArray[12] = "http://files.jb51.net/file_images/article/201211/6da7993fjw1dnvsnesrutj.jpg"; 
+	imgArray[13] = "http://files.jb51.net/file_images/article/201211/75914d3fgw1dnzlgn33njj.jpg"; 
+	imgArray[14] = "http://files.jb51.net/file_images/article/201211/6a8dea72gw1dnzlwnfju0j.jpg"; 
+	imgArray[15] = "http://files.jb51.net/file_images/article/201211/696387aagw1dnzqd829yyj.jpg";
+
+	for(var i = 0;i <= imgArray.length; i++){
+		textArray[i] = '<div class="thumbnail"><img data-src="holder.js/10%x18" alt="100x100" style="height:100px; width:100px;" src="'+imgArray[i]+'"><div class="caption"><h3>Thumbnail label</h3><p>'+engNum.length+'-'+childArr.length+'-'+engNum[0]+'-'+'</p><p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p></div></div>';
+	}
+	//初始化 
+	loadImg(ran); 
+	//主会场 
+	window.onscroll = fun_scroll; 
+	//滚动方法 
+	function fun_scroll() { 
+		//控制滚动条次数以及判断是否到达底部 
+		if (reset == 0) { 
+			//body的高度 
+			var topAll = OsObj.scrollHeight;
+			//卷上去的高度 
+			var top_top = OsObj.scrollTop;
+			//网页可见的区域高
+			var webHeight = OsObj.offsetHeight;
+			var loadingTop = GetPosition(loading); 
+			//alert(topAll+'\n'+top_top+'\n'+webHeight+'\n'+(top_top+webHeight)+'\n'+loadingTop);
+			if(topAll - (loadingNum + 1) * loadingHeight  < loadingTop){
+				setTimeout(loadImg(ran), 1000); 
+				reset = 1;
+				loadingNum++;
+			} 
+		} else { 
+			setTimeout(function () { reset = 0; }, 1000); 
+		} 
+	} 
+	//加载图片 
+	function loadImg(ran) { 
+		loading.style.display = "none"; 
+		for (var i = 0; i < bigDivCount; i++) {
+			for(var j = 0; j < childArr.length;j++){
+				div[j].appendChild(addDiv(ran));
+				ran++;
+			}
+		} 
+		setTimeout(function () { 
+			var hh = OsObj.scrollHeight; 
+			loading.style.top = hh + "px"; 
+			loading.style.display = "block"; 
+		}, 1000); 
+	}
+	function addDiv(ran){
+		var div = document.createElement("div"); 
+		div.innerHTML = textArray[ran]; 
+		return div; 
+	} 
+	//通过id得到对象 
+	function $(id) { 
+		return document.getElementById(id); 
+	} 
+	//得到浏览器的名称 
+	function getBrowser() { 
+		var OsObject = ""; 
+		if (navigator.userAgent.indexOf("MSIE") > 0) { 
+			return "MSIE"; 
+		} 
+		if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) { 
+			return "Firefox"; 
+		} 
+		if (isSafari = navigator.userAgent.indexOf("Safari") > 0) { 
+			return "Safari"; 
+		} 
+		if (isCamino = navigator.userAgent.indexOf("Camino") > 0) { 
+			return "Camino"; 
+		} 
+		if (isMozilla = navigator.userAgent.indexOf("Gecko/") > 0) { 
+			return "Gecko"; 
+		} 
+	}
+	
+	// 获取元素的所有子节点
+	function getChildNodes(ele){
+		var childArr = ele.children || ele.childNodes,
+			childArrTem=new Array();  //  临时数组，用来存储符合条件的节点
+		for(var i=0,len=childArr.length;i<len;i++){
+			if(childArr[i].nodeType==1){
+				childArrTem.push(childArr[i]);
+			}
+		}
+		return childArrTem;
+	}
+	// 获得某元素的位置，返回位置的纵坐标
+	function GetPosition(obj){
+		var left  = 0;
+		var top   = 0; 
+		while( obj != OsObj ){
+			left  = obj.offsetLeft;
+			top   = obj.offsetTop;
+			obj   = obj.offsetParent;
+		}
+		//alert("Left Is : " + left + "\r\n" + "Top   Is : " + top);
+		return top;
+	}
+} 
+</script> 

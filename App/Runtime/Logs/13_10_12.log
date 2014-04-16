@@ -1,0 +1,820 @@
+[ 2013-10-12T00:01:10+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003172s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010675s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.008083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000984s ]
+
+[ 2013-10-12T00:03:11+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004206s ]
+INFO: Run CheckLang Behavior [ RunTime:0.008732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014422s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.007790s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000696s ]
+
+[ 2013-10-12T00:05:12+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003815s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011840s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.008361s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000892s ]
+
+[ 2013-10-12T00:07:13+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002853s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010387s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.006116s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000679s ]
+
+[ 2013-10-12T00:09:14+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002904s ]
+INFO: Run CheckLang Behavior [ RunTime:0.007251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011331s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.006137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000772s ]
+
+[ 2013-10-12T00:11:15+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002696s ]
+INFO: Run CheckLang Behavior [ RunTime:0.007074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010741s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.005752s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000583s ]
+
+[ 2013-10-12T00:13:16+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002904s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010823s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.006895s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000757s ]
+
+[ 2013-10-12T00:15:17+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/getNewCount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002965s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011102s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.006986s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `q_feed` WHERE ( `feed_id` > 70 ) AND ( `is_del` = 0 ) LIMIT 1   [ RunTime:0.000541s ]
+
+[ 2013-10-12T09:56:05+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/loadMoreFeed
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005128s ]
+INFO: Run CheckLang Behavior [ RunTime:0.009217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015988s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.008135s ]
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` <= 73 ) AND ( `is_del` = 0 ) ORDER BY publish_time desc,feed_id desc LIMIT 0,10   [ RunTime:0.001787s ]
+SQL: SHOW COLUMNS FROM `q_feed_data` [ RunTime:0.071944s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=73 ) LIMIT 1   [ RunTime:0.016480s ]
+SQL: SHOW COLUMNS FROM `q_user` [ RunTime:0.009071s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `q_feed_type` [ RunTime:0.005718s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `q_collection` [ RunTime:0.004620s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `q_collection`
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000783s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=72 ) LIMIT 1   [ RunTime:0.003394s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000384s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001270s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=71 ) LIMIT 1   [ RunTime:0.000572s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000761s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000708s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000998s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=70 ) LIMIT 1   [ RunTime:0.000592s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000798s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000582s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001016s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=69 ) LIMIT 1   [ RunTime:0.000863s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000572s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000652s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001429s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=68 ) LIMIT 1   [ RunTime:0.000656s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000708s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000682s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001086s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` = 67 ) LIMIT 1   [ RunTime:0.001210s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000593s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000466s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000504s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001094s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000590s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000432s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000506s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000998s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=66 ) LIMIT 1   [ RunTime:0.000555s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000449s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000365s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000951s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=65 ) LIMIT 1   [ RunTime:0.000454s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000633s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000921s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=64 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000456s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000777s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002443s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003041s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 18 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.058241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058986s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002923s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.003205s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002222s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.004455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015335s ]
+
+[ 2013-10-12T10:08:48+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001681s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006919s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: activity_id C:\wamp\www\agdQ\App\Lib\Action\Home\ActivityAction.class.php 第 306 行.
+
+[ 2013-10-12T10:11:35+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/loadMoreFeed
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004322s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010413s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.005461s ]
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` <= 73 ) AND ( `is_del` = 0 ) ORDER BY publish_time desc,feed_id desc LIMIT 0,10   [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `q_feed_data` [ RunTime:0.006259s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=73 ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `q_user` [ RunTime:0.005877s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `q_feed_type` [ RunTime:0.005362s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `q_collection` [ RunTime:0.005050s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `q_collection`
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000976s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=72 ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000466s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000401s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000810s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=71 ) LIMIT 1   [ RunTime:0.000564s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000341s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000848s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=70 ) LIMIT 1   [ RunTime:0.000565s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000528s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000835s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=69 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000897s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=68 ) LIMIT 1   [ RunTime:0.000571s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000453s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000361s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001102s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` = 67 ) LIMIT 1   [ RunTime:0.000743s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000421s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000487s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000852s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000574s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.002110s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000722s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001055s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=66 ) LIMIT 1   [ RunTime:0.000544s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000546s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000847s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=65 ) LIMIT 1   [ RunTime:0.000722s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000718s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001246s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=64 ) LIMIT 1   [ RunTime:0.000812s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000662s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000639s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001241s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002484s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003308s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 18 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.060260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060943s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002630s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002110s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001762s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.003926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012574s ]
+
+[ 2013-10-12T10:12:52+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002692s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010413s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: activity_id C:\wamp\www\agdQ\App\Lib\Action\Home\ActivityAction.class.php 第 306 行.
+
+[ 2013-10-12T10:14:05+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002858s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010995s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: activity_id C:\wamp\www\agdQ\App\Lib\Action\Home\ActivityAction.class.php 第 306 行.
+
+[ 2013-10-12T10:14:09+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002863s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009780s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: activity_id C:\wamp\www\agdQ\App\Lib\Action\Home\ActivityAction.class.php 第 306 行.
+
+[ 2013-10-12T10:14:57+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001888s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006773s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: activity_id C:\wamp\www\agdQ\App\Lib\Action\Home\ActivityAction.class.php 第 306 行.
+
+[ 2013-10-12T10:25:31+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001779s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006719s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: activity_id C:\wamp\www\agdQ\App\Lib\Action\Home\ActivityAction.class.php 第 306 行.
+
+[ 2013-10-12T10:26:47+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001978s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007824s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:28:01+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001836s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007301s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:28:22+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001693s ]
+INFO: Run CheckLang Behavior [ RunTime:0.003958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006498s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:28:44+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003382s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009192s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:29:55+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002337s ]
+INFO: Run CheckLang Behavior [ RunTime:0.007441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010831s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:31:12+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003535s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010908s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:31:40+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001863s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007623s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:31:42+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001585s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007900s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:32:48+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001929s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007699s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:33:34+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002231s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008069s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:33:40+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002311s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008357s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:34:18+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002545s ]
+INFO: Run CheckLang Behavior [ RunTime:0.007264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010973s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:34:32+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002415s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008579s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+
+[ 2013-10-12T10:36:00+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002728s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010086s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_activity` [ RunTime:0.024167s ]
+SQL: UPDATE `q_activity` SET `is_complete`=1 WHERE ( `id` = 2 ) [ RunTime:0.000587s ]
+
+[ 2013-10-12T10:36:17+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002640s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008378s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_activity` [ RunTime:0.006035s ]
+SQL: UPDATE `q_activity` SET `is_complete`=1 WHERE ( `id` = 2 ) [ RunTime:0.000632s ]
+
+[ 2013-10-12T10:36:29+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001995s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007894s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_activity` [ RunTime:0.006008s ]
+SQL: UPDATE `q_activity` SET `is_complete`=1 WHERE ( `id` = 2 ) [ RunTime:0.000481s ]
+
+[ 2013-10-12T10:36:34+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002177s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009853s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_activity` [ RunTime:0.031115s ]
+SQL: UPDATE `q_activity` SET `is_complete`=1 WHERE ( `id` = 2 ) [ RunTime:0.000613s ]
+
+[ 2013-10-12T10:38:07+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001684s ]
+INFO: Run CheckLang Behavior [ RunTime:0.003826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006364s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_activity` [ RunTime:0.004983s ]
+SQL: UPDATE `q_activity` SET `is_complete`=1 WHERE ( `id` = 2 ) [ RunTime:0.000622s ]
+
+[ 2013-10-12T10:39:10+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doOverAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003160s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010709s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_activity` [ RunTime:0.009991s ]
+SQL: UPDATE `q_activity` SET `is_complete`=1 WHERE ( `id` = 2 ) [ RunTime:0.000569s ]
+
+[ 2013-10-12T14:59:50+08:00 ] 127.0.0.1 /agdQ/index.php/Activity/doDelAct
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002157s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009191s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_activity` [ RunTime:0.069055s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\agdQ\App\Lib\Action\Home\ActivityAction.class.php 第 326 行.
+SQL: SELECT * FROM `q_activity` LIMIT 1   [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `q_attach` [ RunTime:0.005621s ]
+SQL: SHOW COLUMNS FROM `q_attach` [ RunTime:0.005336s ]
+SQL: SELECT * FROM `q_attach` WHERE ( `attach_id` IN ('','86','87') )  [ RunTime:0.000775s ]
+SQL: DELETE FROM `q_attach` WHERE ( `attach_id` IN ('','86','87') ) [ RunTime:0.116361s ]
+SQL: DELETE FROM `q_activity` WHERE ( `id` = 7 ) [ RunTime:0.000748s ]
+
+[ 2013-10-12T16:28:27+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/loadMoreFeed
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004219s ]
+INFO: Run CheckLang Behavior [ RunTime:0.010638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017508s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.021621s ]
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` <= 73 ) AND ( `is_del` = 0 ) ORDER BY publish_time desc,feed_id desc LIMIT 0,10   [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `q_feed_data` [ RunTime:0.008076s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=73 ) LIMIT 1   [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `q_user` [ RunTime:0.008102s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `q_feed_type` [ RunTime:0.005564s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `q_collection` [ RunTime:0.005575s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `q_collection`
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001110s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=72 ) LIMIT 1   [ RunTime:0.000820s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000715s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000931s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001199s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=71 ) LIMIT 1   [ RunTime:0.000915s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000620s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000567s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001479s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=70 ) LIMIT 1   [ RunTime:0.001784s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.001078s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000994s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000946s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=69 ) LIMIT 1   [ RunTime:0.000592s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000626s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000442s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001065s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=68 ) LIMIT 1   [ RunTime:0.000594s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000789s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000880s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001175s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` = 67 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000634s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001358s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000564s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000693s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000560s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000891s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=66 ) LIMIT 1   [ RunTime:0.000667s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000724s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000561s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000939s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=65 ) LIMIT 1   [ RunTime:0.000567s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000474s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000842s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=64 ) LIMIT 1   [ RunTime:0.000687s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000625s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000912s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003262s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004575s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 18 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.085334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086488s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003141s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.003296s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002909s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.006696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019834s ]
+
+[ 2013-10-12T16:38:23+08:00 ] 127.0.0.1 /agdQ/index.php/Widget/loadMoreFeed
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002626s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009704s ]
+NOTIC: [8] Use of undefined constant APPNAME - assumed 'APPNAME' C:\wamp\www\agdQ\App\Lib\Action\Home\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `q_feed` [ RunTime:0.045647s ]
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` <= 73 ) AND ( `is_del` = 0 ) ORDER BY publish_time desc,feed_id desc LIMIT 0,10   [ RunTime:0.001513s ]
+SQL: SHOW COLUMNS FROM `q_feed_data` [ RunTime:0.006791s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=73 ) LIMIT 1   [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `q_user` [ RunTime:0.006850s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `q_feed_type` [ RunTime:0.006422s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `q_collection` [ RunTime:0.005722s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `q_collection`
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001126s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '73' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=72 ) LIMIT 1   [ RunTime:0.000770s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.001132s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000693s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001267s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '72' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=71 ) LIMIT 1   [ RunTime:0.000987s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000809s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.001635s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000927s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '71' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=70 ) LIMIT 1   [ RunTime:0.000840s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.001522s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000910s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001274s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '70' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=69 ) LIMIT 1   [ RunTime:0.000745s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000787s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001337s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '69' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=68 ) LIMIT 1   [ RunTime:0.000850s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000802s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000631s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001217s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '68' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT * FROM `q_feed` WHERE ( `feed_id` = 67 ) LIMIT 1   [ RunTime:0.000716s ]
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000655s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000846s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001295s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=67 ) LIMIT 1   [ RunTime:0.000774s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000728s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '67' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=66 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000567s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000534s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.000876s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '66' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=65 ) LIMIT 1   [ RunTime:0.000547s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000559s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001091s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '65' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+SQL: SELECT `feed_content` FROM `q_feed_data` WHERE ( feed_id=64 ) LIMIT 1   [ RunTime:0.000576s ]
+SQL: SELECT `nickname` FROM `q_user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SELECT `tname` FROM `q_feed_type` WHERE ( tid=5 ) LIMIT 1   [ RunTime:0.000462s ]
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 229 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1   [ RunTime:0.001058s ]
+ERR: 1146:Table 'agdq.q_collection' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `q_collection` WHERE ( `source_id` = '64' ) AND ( `uid` = '2' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant USER_AUTH_KEY - assumed 'USER_AUTH_KEY' C:\wamp\www\agdQ\App\Lib\Model\FeedModel.class.php 第 231 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002643s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003244s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 18 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+NOTIC: [8] Undefined index: comment_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 30 行.
+NOTIC: [8] Undefined index: repost_count C:\wamp\www\agdQ\App\Runtime\Cache\Home\5d9f3890b005145cfd7f4c362476492d.php 第 36 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.050676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051377s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002691s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002753s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002026s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012759s ]
+

@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑";
+}
+
+.header {
+	position:relative;
+	height: 120px;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.header-logo {
+	position:absolute;
+	height: 80px;
+	width: 300px;
+	left:50%;
+	top:50%;
+	margin-left:-150px;
+	margin-top:-40px;
+	background-image: url(../Images/logo_old.png);
+	
+	}
+.content {
+	position:relative;
+	height: 495px;
+	width: 100%;
+}
+.content-login{
+	position:absolute;
+	height: 350px;
+	width: 600px;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-200px;
+	background-color: #FFF;
+	border-radius: 6px;
+}
+.content-register{
+	position:absolute;
+	height: 580px;
+	width: 600px;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-290px;
+	background-color: #FFF;
+	border-radius: 6px;
+}
+.content-login-words,.content-register-words {
+	height: 80px;
+	width: 580px;
+	line-height: 80px;
+	padding-left: 20px;
+	color: #666;
+	background-color: #F9F9F9;
+	font-family: "微软雅黑";
+	border-radius: 6px;
+
+}
+.content-login-form{
+	height: 160px;
+	width: 600px;
+	margin-top: 30px;
+}
+.content-register-form{
+	height:400px;
+	width:600px;
+	margin-top: 30px;
+}
+.content-login-button,.content-login-form-box,.content-register-button,.content-register-form-box {
+	height: 80px;
+	width: 580px;
+	padding-left: 20px;
+}
+
+
+
+.footer {
+	color: #666;
+	height: 25px;
+	width: 100%;
+	background-color: #FFF;
+}
+.footer-copyright {
+	width: 400px;
+	height: 25px;
+	margin-left:150px;
+	float:left;
+	line-height: 25px;
+	font-size:14px;
+}
+.footer-links {
+	float: right;
+	height: 25px;
+	width: 60px;
+	margin-right: 150px;
+	line-height: 25px;
+	text-align:center;
+	font-size:14px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="repass"] {
+  color: #707b91;
+  background-color: #eceef1;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  width: 300px;
+  padding: 17px 15px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  outline: medium none;
+}
+/*button*/
+a.green-btn,
+{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  padding: 0 15px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  }
+input.green-btn {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.green-btn {
+  background-color: #09F;
+}
+.green-btn.low,
+{
+  line-height: 40px;
+  height: 40px;
+}
+.green-btn.short,
+{
+  padding: 0;
+  width: 150px;
+}
+.follow-btn {
+  display: block;
+  line-height: 30px;
+  padding: 0 10px;
+  background: #ef9e4f;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.follow-btn.followed {
+  background: #eceef1;
+  color: #707b91;
+}
+.follow-btn i {
+  height: 12px;
+  width: 12px;
+  margin: 3px 5px 0 0;
+  background: url("../Images/heart-hollow.png");
+}
+.follow-btn.followed i {
+  background: url("../Images/heart-grey.png");
+}
+.follow-btn.followed i {
+  -webkit-animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  -moz-animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  -o-animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  opacity: 1;
+}
+.close-btn {
+  float: right;
+  margin-top: -1px;
+}
+.close-btn i {
+  background: url("../Images/close-circle.png");
+}
+.close-btn:hover,
+.close-btn:active {
+  opacity: .9;
+}
+.new-item-btn {
+  float: left;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  background-color: #707b91;
+  background-image: url("../Images/add.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.new-item-btn:hover,
+.new-item-btn:active {
+  opacity: .9;
+}

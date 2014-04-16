@@ -1,0 +1,17 @@
+	$data['attach_type'] = t($_REQUEST['attach_type']);
+	$data['upload_type'] = $_REQUEST['upload_type'] ? t($_REQUEST['upload_type']) : 'file';
+	
+	$option['attach_type'] = $data['attach_type'];
+	
+		//一般这个不用改 ，保存到Attach文件夹下面$options['save_path'] = '';//可以改附件为图片或头像的路径，
+	
+	//关联别的表名的相关的信息
+	$options['app_name'] = '';
+	$options['table'] = '';
+	$options['row_id'] = '';
+	
+	$options['uid'] = $_SESSION[C('USER_AUTH_KEY')];//默认为$_SESSION[C('USER_AUTH_KEY')]
+	$options['private'] = 0;//默认为0是公开，1为是私有（即对其他人不可见）
+	$options['from'] = 0;//默认为0
+	
+	$info = D('Attach')->upload($data, $option);

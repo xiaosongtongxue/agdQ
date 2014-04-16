@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><{$title | default="后台管理中心"}></title>
+<!--[if lt IE 9]>
+  <script src="__PUBLIC__/Js/html5.js"></script>
+<![endif]-->
+
+<script src="__PUBLIC__/Js/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/bootstrap/bootstrap.min.js"></script>
+<!-- sco plugin -->
+<script src="__PUBLIC__/Js/sco/sco.modal.js"></script>
+<script src="__PUBLIC__/Js/sco/sco.panes.js"></script>
+<script src="__PUBLIC__/Js/sco/sco.valid.js"></script>
+<script src="__PUBLIC__/Js/sco/sco.message.js"></script>
+<!-- sco plugin -->
+<script src="__PUBLIC__/Js/common.js"></script>
+<script src="__PUBLIC__/Js/core.js"></script>
+<script src="__PUBLIC__/Js/module.js"></script>
+<script src="__PUBLIC__/Js/admin/admin.js"></script>
+<link href="__PUBLIC__/Css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/scojs.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--后台导航栏-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner"> 
+    <a class="brand" href="__SELF__" style="color:white;">agdQ管理后台</a>
+    <ul class="nav pull-right" >
+    <li> <a href="" class="bootstro" style="color:white;"><i class="icon-user icon-white"></i><{$Think.session.nickname}></a> </li>
+    <li class="divider-vertical" style="border:1px solid"></li>
+    <li> <a href="__APP__" class="bootstro" style="color:white;"><i class="icon-home icon-white"></i>返回前台</a> </li>
+    <li class="divider-vertical navbar-inverse" style="border:1px solid"></li>
+    <li> <a href="__APP__/Login/doLogout" class="bootstro" style="color:white;"><i class="icon-off icon-white"></i>退出</a> </li>
+    </ul>
+  </div>
+</div>
+
+<!--后台导航栏--> 
+
+
+<div class="container-fluid" style=" margin-top:60px;">
+  <div class="row-fluid">
+    <div class="span2">
+      <ul class="nav nav-list">
+        <li class="nav-header">用户管理</li>
+        <volist name='navMenu' id='vo'>
+        	
+	        <li class="<php>if($vo['name']==$curMenu){</php>active<php>}</php>"><a href="<{$vo.href}>"><{$vo.title}></a></li>
+	
+        </volist>
+      </ul>
+    </div>
+    <div class="span10 ">
+    	{__CONTENT__}
+    </div>
+  </div>
+</div>
+
+<footer>
+</footer>
+
+</body></html>
+
+                                    

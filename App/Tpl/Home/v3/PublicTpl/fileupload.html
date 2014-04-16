@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文件上传测试</title>
+</head>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Js/uploadify-v3.1/uploadify.css" media="all">
+<link href="__PUBLIC__/Css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="__PUBLIC__/Js/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/bootstrap/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Js/bootstrap/bootstrap-inputmask.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/uploadify-v3.1/jquery.uploadify-3.1.min.js"></script>
+<style>
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+</style>
+<body>
+
+<div class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputActivityPoster">活动海报</label>
+        <div class="controls">
+            <ul class="thumbnails" id="picInfo">
+
+            </ul>
+		</div>
+        <div class="controls">
+            <input type="file" name="poster" id="inputActivityPoster" placeholder="活动海报">
+        </div>
+    </div>
+</div>
+<!--弹出框提示错误start-->
+<a id="modal-760589" href="#modal-container-760589" role="button" data-toggle="modal"></a>
+<div id="modal-container-760589" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">
+            信息
+        </h3>
+    </div>
+    <div class="modal-body">
+        <p id="file-upload-error-message" class="text-center">
+        </p>
+    </div>
+    <div class="modal-footer">
+         <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+    </div>
+</div>
+<!--弹出框提示错误end-->
+</body>
+</html>
+<script>
+$(function() {
+	$('#inputActivityPoster').uploadify({  
+		'swf'           :   '__PUBLIC__/Js/uploadify-v3.1/uploadify.swf',
+		'removeTimeout' :   '2',//进度条在2秒后消失
+		'uploader'      :   '__APP__/PublicTpl/uploadActivityImage',//'<{:U("PublicTpl/upload")}>',
+   //     'cancelImg'     :   '__PUBLIC__/Js/uploadify-v3.1/uploadify-cancel.png',//删除按钮的图片
+		'buttonText'    :   '<span class="btn btn-primary fileinput-button"><i class="icon-plus icon-white"></i><span>添加海报...</span></span>',
+		'method'        :   'post',  
+		'fileTypeDesc'  :   '图片文件',
+		'fileTypeExts'  :   '*.gif;*.jpg;*.png;*.bmp;*.jpeg',//允许上传的图片格式
+		//'fileSizeLimit' :   '6144KB',//上传图片的大小限制,注释后可在后台进行处理大小限制
+		'multi'         :   true,              
+		/** 
+		 * 上传成功后触发事件 
+		 */  
+		'onUploadSuccess' : function(file, data, response) { 
+			var data = $.parseJSON(data);
+			//参数data['data']保存的是上传后的图片的路径  
+			//alert(data.info[0].name);
+			if(data['status'] == 1){
+				$('#picInfo').append('<li class="span2"><a href="'+data['data']+'" class="thumbnail"><img data-src="holder.js/160x120" alt="160x120" src="'+data['data']+'"></a><input type="hidden" name="aid[]" value="'+data.info[0].aid+'"/></li>');
+				/*<input type="hidden" name="name[]" value="'+data.info[0].name+'"/>
+				<input type="hidden" name="type[]" value="'+data.info[0].type+'"/>
+				<input type="hidden" name="size[]" value="'+data.info[0].size+'"/>
+				<input type="hidden" name="extension[]" value="'+data.info[0].extension+'"/>
+				<input type="hidden" name="savepath[]" value="'+data.info[0].savepath+'"/>
+				<input type="hidden" name="savename[]" value="'+data.info[0].savename+'"/>
+				<input type="hidden" name="hash[]" value="'+data.info[0].hash+'"/>
+				*/
+			}else{
+				$('#file-upload-error-message').append(data.data);
+				$('#modal-760589').click();	
+			}
+		},  
+	});
+});  
+</script>

@@ -1,0 +1,37 @@
+<include file="Public:public_header" />
+<!--编辑相关的活动页面start-->
+<div class="container" style="margin-top:60px;">
+	<div class="row">
+		<div class="span12"> 
+			<div class="tabbable" style="min-height:400px;">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#postActivity" data-toggle="tab">发布活动</a></li>
+                    <li><a href="#editActivity" data-toggle="tab">编辑活动</a></li>
+                </ul>
+				<div class="tab-content"> 
+                    <div class="tab-pane active" id="postActivity" model-node="postActivity">
+                    	<{:W('PostActivity',array('file_html'=>'postActivity'))}>
+                    </div>
+                    <div class="tab-pane" id="editActivity" model-node="editActivity">
+                        <ul class="thumbnails">
+							<volist name="actInfo" id="vo">
+								<li class="span12">
+									<div class="thumbnail">
+										<div class="caption" contenteditable="false">
+											<h3><{$vo.title}></h3>
+											<p><{$vo.intro}></p>
+											<p><a class="btn btn-primary" href="<{:U('Activity/editSingleActivity',array('activity_id'=>$vo['id']))}>">编辑</a> <a class="btn btn-danger" href="#">删除</a></p>
+										</div>
+									</div>
+								</li>
+							</volist>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--编辑相关的活动页面end-->
+
+<include file="Public:public_footer" />

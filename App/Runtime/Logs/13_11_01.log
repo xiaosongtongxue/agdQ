@@ -1,0 +1,6 @@
+[ 2013-11-01T22:42:03+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001605s ]
+INFO: Run CheckLang Behavior [ RunTime:0.003831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006297s ]
+

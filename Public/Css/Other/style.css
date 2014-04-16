@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-----------------publish发表框部分--------------------*/
+#contentBox {
+	color:#777;
+	border:1px solid #d0d0d0;
+	border-radius:6px;
+	background:#fff url(__PUBLIC__/Images/inputBG.png) repeat-x;
+	font:14px/1.5 arial;
+}
+#contentBox.active {
+	border:1px solid #7abb2c;
+}
+#contentBox {
+	width:530px;
+	resize:none;
+	height:120px;
+	overflow:auto;
+}
+/*-----------------publish发表框部分--------------------*/
+
+
+.footer {
+	color: #666;
+	height: 25px;
+	width: 100%;
+	background-color: #FFF;
+}
+.footer-copyright {
+	width: 400px;
+	height: 25px;
+	margin-left:100px;
+	float:left;
+	line-height: 25px;
+	font-size:14px;
+}
+.footer-links {
+	float: right;
+	height: 25px;
+	width: 60px;
+	margin-right: 100px;
+	line-height: 25px;
+	text-align:center;
+	font-size:14px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="repass"] {
+  color: #707b91;
+  background-color: #eceef1;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  width: 300px;
+  padding: 17px 15px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  outline: medium none;
+}
+/*button*/
+a.green-btn,
+{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  padding: 0 15px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  }
+input.green-btn {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.green-btn {
+  background-color: #09F;
+}
+.green-btn.low,
+{
+  line-height: 40px;
+  height: 40px;
+}
+.green-btn.short,
+{
+  padding: 0;
+  width: 150px;
+}
+.follow-btn {
+  display: block;
+  line-height: 30px;
+  padding: 0 10px;
+  background: #ef9e4f;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.follow-btn.followed {
+  background: #eceef1;
+  color: #707b91;
+}
+.follow-btn i {
+  height: 12px;
+  width: 12px;
+  margin: 3px 5px 0 0;
+  background: url("../Images/heart-hollow.png");
+}
+.follow-btn.followed i {
+  background: url("../Images/heart-grey.png");
+}
+.follow-btn.followed i {
+  -webkit-animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  -moz-animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  -o-animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  animation: heartbeat 0.3s ease-in-out 0s 1 alternate;
+  opacity: 1;
+}
+.close-btn {
+  float: right;
+  margin-top: -1px;
+}
+.close-btn i {
+  background: url("../Images/close-circle.png");
+}
+.close-btn:hover,
+.close-btn:active {
+  opacity: .9;
+}
+.new-item-btn {
+  float: left;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  background-color: #707b91;
+  background-image: url("../Images/add.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.new-item-btn:hover,
+.new-item-btn:active {
+  opacity: .9;
+}

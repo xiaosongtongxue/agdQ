@@ -1,0 +1,37 @@
+<div class="header">
+	<div class="header-logo"></div>
+</div>
+<div class="content" style="height:700px;background-image:url(__PUBLIC__/Uploads/Images/Background/<{$backgroudImages}>);">
+	<div class="content-register">
+    	<div class="content-register-words">
+    	  <h3>用户注册</h3></div>
+        <div class="content-register-form">
+		<form  name = "frm" action = "__URL__/doReg" method = "post" onsubmit = "return regs('click')">
+        	<div class="content-register-form-box">
+				<input type="text"  id="identity" name="username" placeholder="用户名">
+       		    <span class="stats1">请输入用户名</span>
+			</div>
+        	<div class="content-register-form-box">
+				<input type="text"  id="identity" name="stuNumber" placeholder="学号">
+       		    <span class="stats1">请输入学号</span>
+			</div>
+            <div class="content-register-form-box">
+				<input type="email" id="identity" name="email" placeholder="邮箱">
+       		    <span class="stats1">请输入邮箱</span>
+			</div>
+            <div class="content-register-form-box">
+				<input type="password" id="credential" name="password" placeholder="密码">
+                <span class="stats1">请输入密码</span>
+			</div>
+            <div class="content-register-form-box">
+				<input type="password" id="credential" name="repass" placeholder="确认密码">
+                <span class="stats1">再输一次确认密码</span>
+			</div>
+		</div>
+      	<div class="content-login-button">
+			<input type="submit" value="确 认" class="green-btn"> 
+			<a href="__APP__/Login/login">已有帐号？点击登录</a>
+      	</div>
+		</form>
+	</div>
+</div>

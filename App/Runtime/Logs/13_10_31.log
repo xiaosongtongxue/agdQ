@@ -1,0 +1,48 @@
+[ 2013-10-31T22:51:27+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002089s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007773s ]
+
+[ 2013-10-31T22:52:39+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002094s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008123s ]
+
+[ 2013-10-31T22:52:58+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002912s ]
+INFO: Run CheckLang Behavior [ RunTime:0.006327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010639s ]
+
+[ 2013-10-31T22:53:25+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002066s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007458s ]
+
+[ 2013-10-31T22:55:06+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001900s ]
+INFO: Run CheckLang Behavior [ RunTime:0.005168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007961s ]
+
+[ 2013-10-31T22:55:56+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002220s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007639s ]
+
+[ 2013-10-31T22:57:49+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001851s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007052s ]
+
+[ 2013-10-31T22:57:53+08:00 ] 127.0.0.1 /agdQ/index.php/PublicTpl/jsPostTest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002027s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007348s ]
+

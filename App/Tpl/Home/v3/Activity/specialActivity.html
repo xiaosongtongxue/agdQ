@@ -1,0 +1,113 @@
+<include file="Public:public_header" />
+<div class="yf-header">
+	<div class="container">	
+		<!--活动专题-->
+		<div class="row">
+			<div class="col-md-8">
+				<div class="yf-panel">
+					<div class="article-header">
+						<h3><{$activityInfo['title']}></h3>
+						<blockquote>
+							<p><{$activityInfo['intro']}></p>
+							<small><cite title="Source Title">Source Title</cite>&nbsp;发布</small>
+						</blockquote>
+						<small>
+							<a href="javascript:void(0);" data-toggle="tooltip" title="2013年10月06日 20:01发布">
+								<span class="glyphicon glyphicon-time"></span>2013-10-06 20:01 &nbsp;
+							</a> 
+							<a href="javascript:void(0);" data-toggle="tooltip" title="2013年10月06日 20:02更新">
+								<span class="glyphicon glyphicon-refresh"></span>2013-10-06 20:02 &nbsp;
+							</a> 
+							<a href="javascript:void(0);" data-toggle="tooltip" title="访问100人">
+								<span class="glyphicon glyphicon-eye-open"></span>100 &nbsp;
+							</a>
+							<a href="javascript:void(0);" data-toggle="tooltip" title="热度0人">
+								<span class="glyphicon glyphicon-star"></span>0
+							</a>
+						</small>
+					</div>
+					
+					<div  class="article-content">
+						<php>
+							if(is_array($poster)){
+						</php>
+							<!--活动图片展示start-->
+							<div class="carousel slide" id="carousel-356772">
+								<ol class="carousel-indicators">
+									<volist name="poster" id="vo" key="num">
+										<php>
+											if($num == 1){
+												echo '<li data-slide-to="'.($num-1).'" data-target="#carousel-356772" class="active"></li>';
+											}else{
+												echo '<li data-slide-to="'.($num-1).'" data-target="#carousel-356772"></li>';
+											}
+										</php>
+									</volist>
+								</ol>
+								<div class="carousel-inner">
+									<volist name="poster" id="vo" key="num">
+										<php>
+											if($num == 1){
+												echo '<div class="item active">';
+											}else{
+												echo '<div class="item">';
+											}
+										</php>
+											<center>
+												<img alt="" src="<{$vo.save_path.$vo.save_name}>" />
+											</center>
+										</div>
+									</volist>
+								</div>
+								<a data-slide="prev" href="#carousel-356772" class="left carousel-control">‹</a> 
+								<a data-slide="next" href="#carousel-356772" class="right carousel-control">›</a>
+							</div>
+							<!--活动图片展示end-->
+						<php>}</php><!--if结束-->
+						
+						<p>
+							<{$activityInfo['content']}>
+						</p>
+						
+						<address> 
+							<strong>活动地点:</strong><br /> 
+							&nbsp;&nbsp;<{$activityInfo['address']}>
+						</address>
+						<span class="label badge-info">文字标签</span>
+						<!--文字标签start-->					
+							<!--TODO:============================================================================-->
+						<!--文字标签end-->
+					</div>
+					
+					<div class="article-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="yf-panel">
+					右边栏
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="yf-panel">
+					<div class="article-header">
+						<h3>评论:</h3>
+					</div>
+					<form class="form-horizontal" role="form">
+						<textarea class="form-control" rows="3" name="comment"></textarea>
+						<div class="article-footer">
+							<div class="row">
+								<div class="col-md-1 col-md-offset-10">
+									<input type="button" class="btn btn-primary" value="提交" />
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:public_footer" /> 

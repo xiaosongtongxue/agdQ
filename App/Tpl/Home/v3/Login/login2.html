@@ -1,0 +1,27 @@
+<div class="header">
+	<div class="header-logo"></div>
+</div>
+<div class="content" style="background-image:url(__PUBLIC__/Uploads/Images/Background/<{$backgroudImages}>);">
+	<div class="content-login">
+    	<div class="content-login-words"><h3>用户登录</h3></div>
+        <div class="content-login-form">
+        <form action="__URL__/doLogin" method="post">
+        	<div class="content-login-form-box">
+				<input type="text" id="identity" name="identity" placeholder="请输入学号或注册邮箱地址">
+       		    <span class="input-tip">登录帐号</span>
+			</div>
+            <div class="content-login-form-box">
+				<input type="password" id="credential" name="credential" placeholder="请输入注册时设置的密码">
+                <span class="input-tip">登录密码</span>
+                
+			</div>
+            
+      	</div>
+      	<div class="content-login-button">
+        	<input type="checkbox" value="true" name="is_remember_me">记住下次登录&nbsp;&nbsp;<a href="__APP__/Register/forgetPwd">忘记密码</a><br>
+			<input type="submit" value="确 认" class="green-btn"> 
+			<a href="__APP__/Register/register">没有帐号？点击注册</a>
+      	</div>
+		</form>
+    </div>
+</div>

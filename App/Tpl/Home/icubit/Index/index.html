@@ -1,0 +1,41 @@
+<include file="Public:public_header" />
+<div class="container main-wrap" >
+  <div class="row-fluid">
+    <div class="span8" model-node='main_left'> <{:W('PostFeed',array('cid'=>$cid))}> 	
+      <{:W('FeedList',array('cid'=>$cid,'page'=>$page))}> </div>
+    <div class="span4 sidebar" > 
+      <!--个人相关介绍显示部分start--> 
+      <{:W('UserInfo',array('uid'=>$uid))}> 
+      <!--个人信息显示部分end--> 
+      <!--活动显示部分start--> 
+       <{:W('Activity')}> 
+       
+      <!--活动显示部分end-->
+      <!--反馈start-->
+	  <div id="myFeedback" data-backdrop="static" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+           <h3 id="myModalLabel">反馈意见</h3>
+         </div>
+         <div class="modal-body">
+            <{:W('Feedback')}>	
+         </div>
+         <!--<div class="modal-footer">
+            <button class="btn" data-dismiss="modal">关闭</button>
+         </div>-->
+   	   </div>
+       <div>
+          <a data-toggle="modal" href="#myFeedback" class="btn btn-primary btn-large">反馈意见</a>
+       </div>
+	   <!--反馈end-->
+    </div>
+  </div>
+</div>s
+<script>
+/*$(function(){
+	$('#myFeedback').on('show', function(){
+		
+	});
+});*/
+</script>
+<include file="Public:public_footer" /> 

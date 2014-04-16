@@ -1,0 +1,71 @@
+<include file="leftNav" />
+<!--right-Main-->
+<div class="span9" >
+	<div  style="padding: 50px 40px;">
+		<form class="form-horizontal">
+			<legend>基本信息<small>（注：带*的为必填项）</small></legend>
+            
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label" for="nickname">昵称</label>
+					<div class="controls">
+						<input type="text" id="nickname" placeholder="昵称">
+          			</div>
+        		</div>
+                
+<!--        		<div class="control-group">
+          			<label class="control-label" for="stuId">学号</label>
+          			<div class="controls ">
+            			<input type="text" id="stuId" placeholder="我的学号">
+          			</div>
+        		</div>-->
+                
+<!--        		<div class="control-group">
+          			<label class="control-label" for="email">邮箱</label>
+          			<div class="controls ">
+            			<input type="text" id="email" placeholder="邮箱">
+          			</div>
+        		</div>-->
+                
+        		<div class="control-group">
+          			<label class="control-label" for="sex">性别</label>
+          			<div class="controls">
+                    	<label class="radio inline">
+                        	<input type="radio" class="iradio_square-blue" id="inlineRadio1" name="sex" checked="checked" value="1">
+                            <label id="inlineRadio1">男</label>
+						</label>
+                        <label class="radio inline">
+	                        <input type="radio" class="iradio_square-blue" id="inlineRadio2" name="sex" value="2">
+                            <label id="inlineRadio2">女</label>
+						</label>
+          			</div>
+        		</div>
+                
+        		<div class="control-group">
+          			<label class="control-label" for="homeland">家乡</label>
+          			<div class="controls ">
+            			<input type="text" id="homeland" placeholder="我爱我的家乡">
+          			</div>
+        		</div>
+                
+        		<hr />
+                
+        		<input class="btn btn-large offset2 btn-primary" type="submit" value="保存"/>
+      		</fieldset>
+    	</form>
+  	</div>
+</div>
+<!--right-Main-->
+
+	</div>
+</div>
+<include file="Public:public_footer" /> 
+<script>
+	$(document).ready(function(){
+	  $('input').iCheck({
+		checkboxClass: 'icheckbox_square-blue',
+		radioClass: 'iradio_square-blue',
+		increaseArea: '20%'
+	  });
+	});
+</script>

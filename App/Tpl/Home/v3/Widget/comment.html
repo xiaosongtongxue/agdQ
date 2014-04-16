@@ -1,0 +1,16 @@
+
+
+  <volist name="list" id="vo" >
+    <div id="comment<{$vo.comment_id}>" class="media"> <a class="pull-left" href="#"> <img class="media-object" data-src="holder.js/32x32" alt="32x32" style="width: 32px; height: 32px;" src="<{$vo.avatar.avatar_tiny}>"> </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="__APP__/User/profile?uid=<{$vo.uid}>"><{$vo.uname}></a></h4>
+        <p><{$vo.content}> </p>
+        <p style="margin-bottom:0;">
+          
+          <span class="pull-right"><a event-node="reply_comment" href="javascript:void(0)" event-args='feed_id=<{$vo.feed_id}>&feed_uid=<{$vo.feed_uid}>&to_comment_id=<{$vo.comment_id}>&to_uid=<{$vo.uid}>&to_comment_uname=<{$vo.uname}>'>回复</a></span>
+          <span><{$vo.ctime}></span>
+        </p>
+      </div>
+    </div>
+    <hr />
+  </volist>

@@ -1,0 +1,63 @@
+<include file="Public:public_header" />
+<!--个人主页展示平台start-->
+<div class="container" style="margin-top:60px;">
+	<div class="row">
+		<div class="span12">
+			<div class="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="__PUBLIC__/Images/PersonalHomepage.jpg" />
+					</div>
+				</div>
+			</div>
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a data-toggle="tab" href="#panel-1">本人主页</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#panel-2">个人资料</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#panel-3">个人相册</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#panel-4">个人活动</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#panel-5">第五部分</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#panel-6">第六部分</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-1">
+						<{:W('PersonalHomepage',array('file_html'=>'myHomepage','uid'=>$uid))}>
+					</div>
+					<div class="tab-pane" id="panel-2">
+						<{:W('PersonalHomepage',array('file_html'=>'personalData','uid'=>$uid))}>
+					</div>
+					<div class="tab-pane" id="panel-3">
+						<{:W('PersonalHomepage',array('file_html'=>'personalPhoto','uid'=>$uid))}>
+					</div>
+					<div class="tab-pane" id="panel-4">
+						<{:W('PersonalHomepage',array('file_html'=>'personalActivity','uid'=>$uid))}>
+					</div>
+					<div class="tab-pane" id="panel-5">
+						<p>
+							第五部分内容.
+						</p>
+					</div>
+					<div class="tab-pane" id="panel-6">
+						<p>
+							第六部分内容.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--个人主页展示平台end-->
+<include file="Public:public_footer" />

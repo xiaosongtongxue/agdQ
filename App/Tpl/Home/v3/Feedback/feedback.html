@@ -1,0 +1,16 @@
+<include file="Public:public_header" />
+<!--反馈start-->
+<div class="container  main-wrap" >
+  	<div class="row-fluid">
+        <div class="span8" model-node='main_left'> 
+            <{:W('Feedback')}>	
+            <{:W('FeedList',array('cid'=>$cid,'page'=>$page, 'feed_type' => 5))}> 
+        </div>
+        <div class="span4 sidebar" > 
+            <!--右边栏显示-->
+            右边栏显示
+        </div>
+  	</div>
+</div>
+<!--反馈end-->
+<include file="Public:public_footer" /> 

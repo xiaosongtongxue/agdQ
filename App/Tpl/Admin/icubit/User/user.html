@@ -1,0 +1,63 @@
+<include file="tab" />
+<div class="tab-pane active" id="tab1">
+      <table class="table table-condensed table-hover table-bordered" id="list">
+              <thead>
+              <tr>                  
+                  <th colspan="8">
+                  <button class="btn">搜索用户</button>
+                  <a href="#myModal" role="button" class="btn" data-toggle="modal">转移用户组</a>
+                  
+
+                  </th>
+                                 
+                </tr>
+                <tr>
+                  <th><input type="checkbox" id="checkAll" onclick="admin.checkAll(this)"></th>
+                  <th>UID</th>
+                  <th>昵称</th>
+                  <th>学号</th>
+                  <th>邮箱</th>
+                  <th>用户组</th>
+                  <th>注册时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody >
+              <volist name='user' id='vo'> 
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><{$vo.uid}></td>
+                  <td><{$vo.nickname}></td>
+                  <td><{$vo.stu_id}></td>
+                  <td><{$vo.email}></td>
+                  <td><{$vo.group}></td>
+                  <td><{$vo.reg_time}></td>
+                  
+                  <td>编辑|禁用|删除|
+                  <a data-toggle="modal" href="__URL__/moveGroup?uid=<{$vo.uid}>&time=Math.random()" data-target="#moveGroup">转移到</a>
+                	</td>
+                </tr>
+                </volist>
+               
+              </tbody>
+            </table>
+</div>
+
+<!-- Button to trigger modal -->
+
+ 
+<!-- 转移用户组model -->
+<div id="moveGroup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">转移用户组</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    <button class="btn btn-primary" onclick="admin.moveGroup()">确定</button>
+  </div>
+</div>
+<!-- 转移用户组model -->

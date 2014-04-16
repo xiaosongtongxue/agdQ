@@ -1,0 +1,428 @@
+A开头：
+
+$AltBody --属性
+出自：PHPMailer ::$AltBody
+文件：class.phpmailer .php
+说明：该属性的设置是在邮件正文不支持HTML的备用显示
+
+AddAddress --方法
+出自：PHPMailer ::AddAddress()，文件：class.phpmailer .php
+说明：增加收件人。参数1为收件人邮箱，参数2为收件人称呼。例AddAddress("to@163.com","to name")，但参数2可选，AddAddress(to@163.com )也是可以的。
+函数原型：public function AddAddress($address, $name = '') {}
+
+AddAttachment --方法
+出自：PHPMailer ::AddAttachment()
+文件：class.phpmailer .php。
+说明：增加附件。
+参数：路径，名称，编码，类型。其中，路径为必选，其他为可选
+函数原型：
+AddAttachment($path, $name = '', $encoding = 'base64', $type = 'application/octet-stream'){}
+
+AddBCC --方法
+出自：PHPMailer ::AddBCC()
+文件：class.phpmailer .php
+说明：增加一个密送。抄送和密送的区别请看[SMTP发件中的密送和抄送的区别 ] 。
+参数1为地址，参数2为名称。注意此方法只支持在win32下使用SMTP，不支持mail函数 
+函数原型：public function AddBCC($address, $name = ''){}
+
+AddCC -- 方法
+出自：PHPMailer ::AddCC()
+文件：class.phpmailer .php
+说明：增加一个抄送。抄送和密送的区别请看[SMTP发件中的密送和抄送的区别 ] 。
+参数1为地址，参数2为名称注意此方法只支持在win32下使用SMTP，不支持mail函数 
+函数原型：public function AddCC($address, $name = '') {}
+
+AddCustomHeader --方法
+出自：PHPMailer ::AddCustomHeader()
+文件：class.phpmailer .php
+说明：增加一个自定义的E-mail头部。
+参数为头部信息
+函数原型：public function AddCustomHeader($custom_header){}
+
+AddEmbeddedImage -- 方法
+出自：PHPMailer ::AddEmbeddedImage()
+文件：class.phpmailer .php
+说明：增加一个嵌入式图片
+参数：路径,返回句柄[,名称,编码,类型]
+函数原型：public function AddEmbeddedImage($path, $cid, $name = '', $encoding = 'base64', $type = 'application/octet-stream') {}
+提示：AddEmbeddedImage(PICTURE_PATH. "index_01.jpg ", "img_01 ", "index_01.jpg ");
+在html中引用&lt;img src= "cid:img_01 "&gt;
+
+AddReplyTo --方法
+出自：PHPMailer :: AddReplyTo()
+文件：class.phpmailer .php
+说明：增加回复标签，如"Reply-to"
+参数1地址，参数2名称
+函数原型：public function AddReplyTo($address, $name = '') {}
+
+AddStringAttachment -方法
+出自：PHPMailer :: AddStringAttachment()
+文件：class.phpmailer .php
+说明：增加一个字符串或二进制附件（Adds a string or binary attachment (non-filesystem) to the list.?）
+参数：字符串,文件名[,编码,类型]
+函数原型：public function AddStringAttachment($string, $filename, $encoding = 'base64', $type = 'application/octet-stream') {}
+
+Authenticate --方法
+出自：SMTP::Authenticate()
+文件：class.smtp.php
+说明：开始SMTP认证，必须在Hello()之后调用，如果认证成功，返回true，
+参数1用户名，参数2密码
+函数原型：public function Authenticate($username, $password) {}
+
+B开头
+
+$Body --属性
+出自：PHPMailer ::$Body
+文件： class.phpmailer .php
+说明：邮件内容,HTML或Text格式
+
+C开头
+
+$CharSet --属性
+出自：PHPMailer ::$CharSet
+文件：class.phpmailer .php
+说明：邮件编码,默认为iso-8859-1
+
+$ConfirmReadingTo --属性
+出自：PHPMailer ::$ConfirmReadingTo 文件class.phpmailer .php
+说明：回执？
+
+$ContentType --属性
+出自：PHPMailer ::$ContentType
+文件： class.phpmailer .php
+说明:文档的类型，默认为"text/plain"
+
+$CRLF --属性
+出自：PHPMailer ::$ContentType
+文件：class.phpmailer .php
+说明:SMTP回复结束的分隔符（SMTP reply line ending？）
+
+class.phpmailer .php --对象
+出自：class.phpmailer .php
+文件： class.phpmailer .php
+说明：phpmailer 对象
+
+class.smtp.php --对象
+出自：class.smtp.php 文件: class.smtp.php
+说明:SMTP功能的对象
+
+ClearAddresses --方法
+出自：PHPMailer ::ClearAddresses()
+文件： class.phpmailer .php
+说明：清除收件人，为下一次发件做准备。返回类型是void
+
+ClearAllRecipients --方法
+出自：PHPMailer ::ClearAllRecipients()
+文件： class.phpmailer .php
+说明：清除所有收件人，包括CC(抄送)和BCC(密送)
+
+ClearAttachments --方法
+出自：PHPMailer ::ClearAttachments()
+文件： class.phpmailer .php
+说明：清楚附件
+
+ClearBCCs --方法
+出自：PHPMailer ::ClearBCCs() 文件 class.phpmailer .php
+说明：清楚BCC (密送)
+
+ClearCustomHeaders --方法
+出自：PHPMailer ::ClearCustomHeaders()
+文件： class.phpmailer .php
+说明：清楚自定义头部
+
+ClearReplyTos --方法
+出自：PHPMailer ::ClearReplyTos()
+文件： class.phpmailer .php
+说明：清楚回复人
+
+Close --方法
+出自：SMTP::Close()
+文件： class.smtp.php
+说明：关闭一个SMTP连接
+
+Connect --方法
+出自：SMTP::Connect()
+文件： class.smtp.php
+说明：建立一个SMTP连接[/color]Mailer.html
+
+$ContentType --属性
+出自：PHPMailer ::$ContentType
+文件： class.phpmailer .php
+说明:文档的类型，默认为"text/plain"
+
+D开头
+$do_debug --属性
+出自：SMTP::$do_debug
+文件：class.smtp.php
+说明：SMTP调试输出
+
+Data -方法
+出自：SMTP::Data()
+文件：class.smtp.php
+说明：向服务器发送一个数据命令和消息信息（sendsthemsg_datatotheserver）
+
+E开头
+
+$Encoding --属性
+出自：PHPMailer ::$Encoding
+文件：class.phpmailer .php
+说明：设置邮件的编码方式，可选："8bit","7bit","binary","base64",和"quoted-printable".
+
+$ErrorInfo --属性
+出自：PHPMailer ::$ErrorInfo
+文件：class.phpmailer .php
+说明：返回邮件SMTP中的最后一个错误信息
+
+Expand --方法
+出自：SMTP::Expand()
+文件：class.smtp.php
+说 明：返回邮件列表中所有用户。成功则返回数组，否则返回 false(Expandtakesthenameandaskstheservertolistallthepeoplewhoaremembersofthe_list_.Expandwillreturnbackandarrayoftheresultorfalseifanerroroccurs.)
+
+F开头:
+
+$From --属性
+出自：PHPMailer ::$From文件class.phpmailer .php
+说明：发件人E-mail地址
+$FromName --属性
+出自：PHPMailer ::$FromName
+文件：class.phpmailer .php
+说明：发件人称呼
+
+H开头：
+
+$Helo --属性
+出自：PHPMailer ::$Helo
+文件：class.phpmailer .php
+说明：设置SMTPHelo,默认是$Hostname(SetstheSMTPHELOofthemessage(Defaultis$Hostname).)
+
+$Host --属性
+出自：PHPMailer ::$Host
+文件：class.phpmailer .php
+说明：设置SMTP服务器，格式为：主机名[端口号]，如smtp1.example.com:25和smtp2.example.com都是合法的
+
+$Hostname --属性
+出自：PHPMailer ::$Hostname
+文件：class.phpmailer .php
+说明：设置在Message-Id和andReceivedheaders中的hostname并同时被$Helo使用。如果为空，默认为SERVER_NAME或'localhost.localdomain"
+
+Hello --方法
+出自：SMTP::Hello()
+文件：class.smtp.php
+说明：向SMTP服务器发送HELO命令
+
+Help --方法
+出自：SMTP::Help()
+文件：class.smtp.php
+说明：如果有关键词，得到关键词的帮助信息
+
+I开头：
+
+IsError --方法
+出自：PHPMailer ::IsError()
+文件：class.phpmailer .php
+说明：返回是否有错误发生
+
+IsHTML --方法
+出自：PHPMailer ::IsHTML()
+文件：class.phpmailer .php
+说明：设置信件是否是HTML格式
+
+IsMail --方法
+出自:PHPMailer ::IsMail()
+文件：class.phpmailer .php
+说明：设置是否使用php的mail函数发件
+
+IsQmail --方法
+出自:PHPMailer ::IsQmail()
+文件：class.phpmailer .php
+说明：设置是否使用qmailMTA来发件
+
+IsSendmail-- 方法
+出自：PHPMailer ::IsSendmail()
+文件：class.phpmailer .php
+说明：是否使用$Sendmail程序来发件
+
+IsSMTP--方法
+出自：PHPMailer ::IsSMTP()
+文件：class.phpmailer .php
+说明：是否使用SMTP来发件
+
+M开头：
+
+$Mailer --属性
+出自：PHPMailer ::$Mailer
+文件：class.phpmailer .php
+说明:发件方式，("mail","sendmail",or"smtp").中的一个
+
+Mail --方法
+出自：SMTP::Mail()
+文件：class.smtp.php
+说明：从$from中一个邮件地址开始处理，返回true或false。如果是true，则开始发件
+
+N开头：
+
+Noop-- 方法
+出自：SMTP::Noop()
+文件：class.smtp.php
+说明：向SMTP服务器发送一个NOOP命令
+
+P开头：
+$Password --属性
+出自：PHPMailer ::$Password
+文件：class.phpmailer .php
+说明：设置SMTP的密码
+
+$PluginDir --属性
+出自：PHPMailer ::$PluginDir
+文件：class.phpmailer .php
+说明：设置phpmailer 的插件目录，仅在smtpclass不在phpmailer 目录下有效
+
+$Port --属性
+出自：PHPMailer ::$Port
+文件：class.phpmailer .php
+说明：设置SMTP的端口号
+
+$Priority --属性
+出自：PHPMailer ::$Priority
+文件：class.phpmailer .php
+说明：设置邮件投递优先等级。1=紧急,3=普通,5=不急
+
+PHPMailer --对象
+出自：PHPMailer 
+文件：class.phpmailer .php
+说明：PHPMailer -PHPemailtransportclass
+
+Q开头
+
+Quit --方法
+出自：SMTP::Quit()
+文件：class.smtp.php
+说明：向服务器发送Quit命令，如果没有错误发生。那么关闭sock，不然$close_on_error为true
+
+R开头
+
+Recipient --方法
+出自：SMTP::Recipient()
+文件：class.smtp.php
+说明：使用To向SMTP发送RCPT命令，参数为:$to
+
+Reset --方法
+出自：SMTP::Reset()
+文件：class.smtp.php
+说明：发送RSET命令从而取消处理中传输。成功则返回true，否则为false
+
+S开头：
+
+$Sender --属性
+出自：PHPMailer ::$Sender
+文件：class.phpmailer .php
+说明：SetstheSenderemail(Return-Path)ofthemessage.Ifnotempty,willbesentvia-ftosendmailoras'MAILFROM'insmtpmode.
+
+$Sendmail --属性
+出自：PHPMailer ::$Sendmail
+文件：class.phpmailer .php
+说明：设置发件程序的目录
+
+$SMTPAuth --属性
+出自：PHPMailer ::$SMTPAuth
+文件：class.phpmailer .php
+说明：设置SMTP是否需要认证，使用Username和Password变量
+
+$SMTPDebug --属性
+出自：PHPMailer ::$SMTPDebug
+文件：class.phpmailer .php
+说明：设置SMTP是否调试输出？
+
+$SMTPKeepAlive --属性
+出自：PHPMailer ::$SMTPKeepAlive
+文件：class.phpmailer .php
+说明：在每次发件后不关闭连接。如果为true，则，必须使用SmtpClose()来关闭连接
+
+$SMTP_PORT --属性
+出自：SMTP::$SMTP_PORT
+文件：class.smtp.php
+说明：设置SMTP端口
+
+$Subject --属性
+出自：PHPMailer ::$Subject
+文件：class.phpmailer .php
+说明：设置信件的主题
+
+Send --方法
+出自：SMTP::Send()
+文件：class.smtp.php
+说明：从指定的邮件地址开始一个邮件传输
+
+Send --方法
+出自：PHPMailer ::Send()
+文件：class.phpmailer .php
+说明：创建邮件并制定发件程序。如果发件不成功，则返回false，请使用ErrorInfo来查看错误信息
+
+SendAndMail --方法
+出自：SMTP::SendAndMail()
+文件：class.smtp.php
+说明：从指定的邮件地址开始一个邮件传输
+
+SendOrMail --方法
+出自：SMTP::SendOrMail()
+文件：class.smtp.php
+说明：从指定的邮件地址开始一个邮件传输
+
+SetLanguage --方法
+出自：PHPMailer ::SetLanguage()
+文件：class.phpmailer .php
+说明：设置phpmailer 错误信息的语言类型，如果无法加载语言文件，则返回false，默认为english
+
+SMTP --方法
+出自：SMTP::SMTP()
+文件：class.smtp.php
+说明：初始化一个对象以便数据处于一个已知的状态
+
+SMTP --对象
+出自：SMTP
+文件：class.smtp.php
+说明：SMTP对象
+
+SmtpClose --方法
+出自：PHPMailer ::SmtpClose()
+文件：class.phpmailer .php
+说明：如果有活动的SMTP则关闭它。
+
+T开头
+
+$Timeout --属性
+出自：PHPMailer ::$Timeout
+
+文件：class.phpmailer .php
+说明：设置SMTP服务器的超时(单位：秒)。注意：在win32下，该属性无效 
+
+Turn --方法
+出自：SMTP::Turn()
+文件：class.smtp.php
+说明：这是一个可选的SMTP参数，目前phpmailer 并不支持他，可能未来支持
+
+U开头
+
+$Username --属性
+出自：PHPMailer ::$Username
+文件：class.phpmailer .php
+说明：设置SMTP用户名
+
+V开头
+
+$Version --属性
+出自：PHPMailer ::$Version
+文件：class.phpmailer .php
+说明：返回Phpmailer 的版本
+
+Verify --方法
+出自：SMTP::Verify()
+文件：class.smtp.php
+说明：通过服务器检查用户名是否经过验证
+
+W开头：
+
+$WordWrap --属性
+出自：PHPMailer ::$WordWrap
+文件：class.phpmailer .php
+说明：设置每行最大字符数，超过改数后自动换行

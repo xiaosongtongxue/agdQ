@@ -1,0 +1,35 @@
+<div class="pagination pagination-right">
+	<ul>
+		<php>if($page_bar['bfirst']){</php>
+		<li><a href="javascript:core.feed.loadMoreByPage('first')">第1页</a></li>
+		<php>}</php>
+		<php>if($page_bar['bprev']){</php>
+		<li><a href="javascript:core.feed.loadMoreByPage('prev')">«</a></li>
+		<php>}</php>
+		
+		<volist name='page_bar.page' id='vo'>
+		<php>if($vo == $page_bar['cur']){</php>
+		<li class="active disabled" ><a href="javascript:void(0);"><{$vo}></a></li>
+		<php>}else{</php>
+		<li><a href="javascript:core.feed.loadMoreByPage(<{$vo}>)"><{$vo}></a></li>
+		<php>}</php>
+		</volist>
+		
+		<php>if($page_bar['bnext']){</php>
+		<li><a href="javascript:core.feed.loadMoreByPage('next')">»</a></li>
+		<php>}</php>
+		<php>if($page_bar['blast']){</php>
+		<li><a href="javascript:core.feed.loadMoreByPage('last')">第<{$page_bar['last']}>页</a></li>
+		<php>}</php>
+		
+	</ul>
+</div>
+<!-- 
+<li class="disabled"><a href="#">«</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">»</a></li>
+		<li><a href="#">di页</a></li> -->

@@ -1,0 +1,60 @@
+<!--附件上传start-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Js/uploadify-v3.1/uploadify.css" media="all">
+<script type="text/javascript" src="__PUBLIC__/Js/uploadify-v3.1/jquery.uploadify-3.1.js"></script>
+<style>
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+</style>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="file" name="poster" id="inputAttach">
+		</div>
+		<div id="picInfo">
+		</div>
+	</div>
+<script>
+$(function() {
+	$('#inputAttach').uploadify({  
+		'swf'           :   '__PUBLIC__/Js/uploadify-v3.1/uploadify.swf',
+		'removeTimeout' :   '2',//进度条在2秒后消失
+		'uploader'      :   '<{$url}>',
+		'buttonText'    :   '<span class="btn btn-primary fileinput-button"><i class="icon-plus icon-white"></i><span><{$add_name}></span></span>',
+		'method'        :   'post',
+		'fileTypeDesc'  :   '<{$name_file}>',
+		'fileTypeExts'  :   '<{$type_exts}>',//允许上传的图片格式
+		//'fileSizeLimit' :   '6144KB',//上传图片的大小限制,注释后可在后台进行处理大小限制
+		'multi'         :   true,
+		/** 
+		 * 上传成功后触发事件 
+		 */  
+		'onUploadSuccess' : function(file, data, response) { 
+			var data = $.parseJSON(data);
+			//参数data['data']保存的是上传后的图片的路径  
+			if(data['status'] == 1){
+				$('#picInfo').append('<div id="imageAid'+data.info[0].attach_id+'" class="col-sm-6 col-md-3"><a href="'+data['data']+'" target="_blank" class="thumbnail"><img data-src="holder.js/100%x180" alt="thumbnail" src="'+data['data']+'"></a><input type="hidden" id="imageUploadAid" name="aid[]" value="'+data.info[0].attach_id+'"/></div>');
+			}else if(data['status'] == 3){
+				// TODO: 显示附件的代码=====================================================================
+				$.scojs_message(data.data, $.scojs_message.TYPE_OK);
+			}else{
+				alert(data.info);
+				$.scojs_message(data.info, $.scojs_message.TYPE_ERROR);
+			}
+		},  
+	});
+});  
+</script>
+<!--附件上传end-->

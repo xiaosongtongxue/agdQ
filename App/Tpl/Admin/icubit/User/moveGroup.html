@@ -1,0 +1,9 @@
+ {__NOLAYOUT__} 
+ <form id="group_list">
+ <volist name="groups" id="vo">
+ <label class="checkbox">
+      <input type="checkbox" value="<{$vo.id}>" <php>if(in_array($vo['id'],$gids)){</php>checked="checked"<php>}</php>> <{$vo.name}>
+ </label>
+ </volist>
+<input type="hidden" name="uid" value="<{$uid}>">
+ </form>

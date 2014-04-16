@@ -1,0 +1,1 @@
+<?php	return array ( 'cachetype' => 'FILE', 'cachesetting' => '127.0.0.1:11211', );?>

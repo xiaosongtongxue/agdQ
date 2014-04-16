@@ -1,0 +1,14 @@
+ {__NOLAYOUT__} 
+ <div id="moveGroup">
+ <volist name="groups" id="vo">
+ <label class="checkbox">
+      <input type="checkbox" value="<{$vo.id}>" name="user_group[]" <php>if(in_array($vo['id'],$gids)){</php>checked="checked"<php>}</php>> <{$vo.name}>
+ </label>
+ </volist>
+ <div class="text-center">
+<input type="hidden" name="uid" id="uid" value="<{$uid}>">
+<a class="btn" onclick="admin.doMoveGroup()">转移</a>
+<a class="btn" data-dismiss="modal">取消</a>
+</div>
+ </div>
+ 

@@ -1,0 +1,72 @@
+<!--发布之后编辑活动start-->
+<form id="afterActForm" class="form-horizontal" role="form" enctype="application/x-www-form-urlencoded" method="post" action="__APP__/Activity/doAfterAct?activity_id=<{$activity_id}>">
+	 <div class="form-group">
+        <label class="col-md-2 control-label" for="inputActivitySummary">活动总结</label>
+        <div class="col-sm-offset-1 col-md-8">
+        	<textarea id="ckeditors" name="ActSummary" rows="10"><{$actInfo.summary}></textarea>
+        </div>
+    </div>
+    <div class="form-horizontal">
+    	<div class="form-group">
+        	<label class="col-md-2 control-label" for="inputActivityPoster">活动海报</label>
+			<div class="col-sm-offset-1 col-md-8">
+				<{:W('Attach',array('file_type'=>'image', 'app_name'=>'public', 'table'=>'activity'))}>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+        <div class="col-sm-offset-3 col-md-8">			
+            <!--<input type="submit" class="btn" id="previewAct" value="预览" />-->
+			<input type="submit" class="btn" id="actPublish" value="发布" />
+        </div>
+    </div>
+</form>
+<!--发布之后编辑活动end-->
+<script src="__PUBLIC__/ckeditor/ckeditor.js"></script>
+<script src="__PUBLIC__/Js/jquery.form.js"></script>
+<script>
+$(function(){
+	CKEDITOR.replace( 'ckeditors', {
+		uiColor: '#FAFAFA',
+	});	
+	
+	var options = {
+        beforeSubmit :  preSubmit,  // pre-submit callback
+        success      :  postSubmit,  // post-submit callback
+		//dataType     :  'json',        // 'xml', 'script', or 'json' (expected server response type)
+    };
+	
+	// publish activity
+	$('#afterActForm').submit(function(){
+        $(this).ajaxSubmit(options); 
+        return false; 
+    });
+
+	function preSubmit(formData, jqForm, options) {
+		// 错误信息提示
+		var errorMsg = new Array();
+		errorMsg = ['总结'];
+		// 检测不能为空~
+		for (var i=0; i < formData.length; i++) { 
+        	if (!formData[i].value) { 
+				alert('活动'+errorMsg[i]+'不能为空');
+           		//$.scojs_message('活动'+errorMsg[i]+'不能为空', $.scojs_message.TYPE_ERROR);
+				return false;
+        	}
+    	}
+
+    	return true;
+	}
+	
+	// post-submit callback
+	function postSubmit(responseText, statusText)  {
+		if(responseText.status == 1){
+			alert('增加活动后续成功');
+			//$.scojs_message('增加活动后续成功', $.scojs_message.TYPE_OK);
+		}else{
+			alert(responseText.info);
+			//$.scojs_message(responseText.info, $.scojs_message.TYPE_ERROR);
+		}
+	}
+});
+</script>

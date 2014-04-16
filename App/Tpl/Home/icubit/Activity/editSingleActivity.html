@@ -1,0 +1,39 @@
+<include file="Public:public_header" />
+<link href="__PUBLIC__/Css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<!--编辑活动专题页面start-->
+<div class="container" style="margin-top:60px;">
+	<div class="row">
+		<div class="span12"> 
+			<div class="row">
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							asasd
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">更新活动</h3>
+						</div>
+						<div class="panel-body">
+							<{:W('PostActivity',array('file_html'=>'preActivity','activity_id'=>$activity_id))}>
+						</div>
+					</div>
+					<!--<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">活动后续</h3>
+						</div>
+						<div class="panel-body">
+							<{/*<{:W('PostActivity',array('file_html'=>'afterActivity','activity_id'=>$activity_id))}>*/}>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--编辑活动专题页面end-->
+
+<include file="Public:public_footer" />

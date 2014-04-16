@@ -1,0 +1,18 @@
+<include file="Public:public_header" />
+<div class="container main-wrap" >
+  <div class="row-fluid">
+    <div class="span3 sidebar"  >
+      <div >
+        <ul class="nav nav-pills nav-stacked text-center">
+          <volist name="menulist" id='vo'>
+           <li 
+            <if condition="$vo['menu'] eq $menu">class="active" <else /> class=""</if>
+            ><a href="<{$vo.href}>"><{$vo.name}></a>
+            </li>
+            <php>if($i==3){</php>
+            <hr />
+            <php>}</php>
+          </volist>
+        </ul>
+      </div>
+    </div>

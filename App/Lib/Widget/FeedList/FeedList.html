@@ -1,0 +1,31 @@
+<!--发表的信息流显示部分start-->
+
+<div class="yf-panel"　model-node='feed_container' id='feed_container'>
+	
+	<ul class="media-list" id='feed_list' model-node='feed_list'>
+	
+	</ul>
+    
+	<div id='page'></div>
+	
+	<!--modal对话框-->
+	 <div class="modal fade" id="modal">
+	  <div class="modal-header">
+	    <a class="close" href="#" data-dismiss="modal">×</a>
+	    <h3> </h3>
+	  </div>
+	  <div class="inner" style="padding:10px;"></div>
+	</div>
+	<!--modal对话框-->
+</div>
+
+<script type="text/javascript">
+	var uid = '<{$uid}>'
+	var cid = '<{$cid}>'
+	var feed_type = '<{$feed_type}>';	
+	var lastPage = '<{$lastPage}>';
+	var loadId = '<{$lastId}>';
+	var firstId = '<{$firstId}>';
+</script>
+<script src="__PUBLIC__/Js/module/module.feed.js"></script>
+<!--发表的信息流显示部分end-->

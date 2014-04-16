@@ -1,0 +1,18 @@
+<include file="Account:leftNav" />
+
+			<div class="col-md-9">	
+				<div class="yf-panel" style="min-height:500px;">
+					<div class="list-group">
+						<volist name="actInfo" id="vo" empty="$empty" >
+							<a href="<{:U('Activity/updateAct',array('activity_id'=>$vo['id']))}>" class="list-group-item">
+								<h4 class="list-group-item-heading"><{$vo.title}></h4>
+								<p class="list-group-item-text"><{$vo.intro}></p>
+							</a>							
+						</volist>
+				  	</div>	
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+<include file="Public:public_footer" />

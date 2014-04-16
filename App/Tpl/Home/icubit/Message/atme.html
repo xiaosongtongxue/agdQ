@@ -1,0 +1,91 @@
+<include file="leftNav" />
+<!--main-->
+
+<div class="span9">
+	<h3>@我的</h3>
+	<hr style="margin-top:0;"/>
+  <ul class="media-list" id='atme_list' model-node='atme_list'>
+  <volist name="at_list" id="vo">
+  
+    <php>if($vo['atme_type'] == 'feed'){</php>
+    <!--feed-->
+     <li class="media" id="feed<{$vo.feed_id}>" model-node='feed'> <a class="pull-left" href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="<{$vo.avatar.avatar_small}>"> </a>
+    <div class="media-body" model-node="feed_body">
+      <div model-node="feed_main" style=" min-height:65px;">
+        <p><a href="__APP__/User/profile?uid=<{$vo.uid}>"><{$vo.uname}></a>:<span class="label"><{$vo.feed_type_name}></span><{$vo.feed_content}></p>
+        <!--原feed内容-->
+        <php>if($vo['type'] == 'repost'){</php>
+        <php>if($vo['source_feed_del']){</php>
+        <div class="well">资源已被删除</div>
+        <php>}else{</php>
+        <div class="arrow_box">
+        <div class="media" id="feed<{$vo.source_feed_info.feed_id}>" model-node='feed'>
+          <div class="media-body" model-node="feed_body">
+            <div model-node="feed_main" style=" min-height:65px;">
+              <h4 class="media-heading"><a href="__APP__/User/profile?uid=<{$vo.source_feed_info.uid}>"><{$vo.source_feed_info.uname}></a></h4>
+              <p style=" min-height:40px;"><{$vo.source_feed_info.feed_content}></p>
+              <p style="margin-bottom:0;">
+               <span class="pull-right">
+               <a event-node="comment" href="javascript:void(0)" event-args='feed_id=<{$vo.source_feed_info.feed_id}>'>评论<span><{$vo.source_feed_info.comment_count}>&nbsp;|</span></a>
+                <a href="javascript:;" event-node="share" event-args='feed_id=<{$vo.source_feed_info.feed_id}>&type=repost&table=feed'>转发<span><{$vo.source_feed_info.repost_count}></span></a>
+               </span>
+              <span><{$vo.source_feed_info.publish_time}></span>
+              </p>
+              
+             
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        <php>}</php>
+        <php>}</php>
+        <!--原feed内容-->
+        <p>
+        <span class="pull-right">
+        	<php>if($vo['del_display']){</php>
+            <a href="#" event-node="del_feed" href="javascript:void(0)" event-args='feed_id=<{$vo.feed_id}>'>删除&nbsp;|</a>
+            <php>}</php>
+            <a href="#" event-node="comment" href="javascript:void(0)" event-args='feed_id=<{$vo.feed_id}>'>评论<span><{$vo.comment_count}>&nbsp;|</span></a>
+            <php>if($vo['isCollected']){</php>
+            <a href="#" href="javascript:;" onclick="core.plugInit('collection',this,'<{$vo.feed_id}>','feed')" rel="remove">取消收藏&nbsp;|</a>
+            <php>}else{</php>
+            <a href="#" href="javascript:;" onclick="core.plugInit('collection',this,'<{$vo.feed_id}>','feed')" rel="add">收藏&nbsp;|</a>
+            <php>}</php>
+            <a href="#" href="javascript:;" event-node="share" event-args='feed_id=<{$vo.feed_id}>&type=repost&table=feed'>转发<span><{$vo.repost_count}></span></a>
+        
+        </span>
+        <spna><{$vo.publish_time}></span>
+        
+        </p>
+      </div>
+     
+      <!-- 评论-->
+      
+      <div class="widget hide " model-node="feed_comment">
+        
+        <div class="" model-node="mini_editor">
+          <textarea  rows="2"  event-node="mini_editor_textarea" style="width:80%"></textarea>
+          <a class="feed-comment-box" href="javascript:void(0);"  event-node="do_comment"  event-args='feed_id=<{$vo.feed_id}>&to_comment_id=0&to_uid=0' >
+          <button class="btn">回复</button>
+          </a> </div>
+        <div model-node="comment_list"></div>
+      </div>
+      <!-- 评论--> 
+      
+    </div>
+    <hr style="margin-top:0;"/>
+  </li>
+    <!--feed-->
+    <php>}else{</php>
+    <!--comment-->
+    
+    <!--comment-->
+    <php>}</php>
+   </volist>
+  </ul>
+</div>
+<!--main-->
+</div>
+</div>
+<include file="Public:public_footer" /> 

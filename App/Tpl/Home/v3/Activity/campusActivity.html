@@ -1,0 +1,53 @@
+<include file="Public:public_header" />
+<div class="yf-header">
+	<div class="container">
+		<div class="row">
+			<div class="yf-panel">
+				<h1><{$campusActivityTitle}></h1>
+				<p><{$campusActivityIntro}></p>
+			</div>
+		</div>
+					
+		<!--左边栏start-->
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-2 col-md-push-10">
+								<a href="__GROUP__/Activity/editActivity" class="btn btn-success">press me</a>													
+							</div>
+						</div>
+					</div>
+				</div>
+				<volist name="activityInfo" id="vo">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail" style="height:220px;">
+							<div class="caption">
+								<h3><{$vo.title}></h3>
+								<p><{$vo.intro}></p>
+								<p><a class="btn btn-primary" role="button" href="<{:U('Activity/specialActivity',array('activityId'=>$vo['id']))}>">浏览</a><a class="btn btn-default" role="button" href="#">分享</a></p>
+							</div>
+						</div>
+					</div>
+				</volist>
+			</div>
+			<!--左边栏end-->
+			
+			<!--右边栏start-->
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h1 class="text-center">
+							<!--标签展示start-->
+							这里放置活动的标签<!--TODO:=============================================================================-->
+							<!--标签展示start-->
+						</h1>
+					</div>
+				</div>
+			</div>
+			<!--右边栏end-->
+		</div>
+	</div>
+</div>
+<include file="Public:public_footer" /> 

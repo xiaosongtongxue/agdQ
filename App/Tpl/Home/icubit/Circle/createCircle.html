@@ -1,0 +1,200 @@
+<include file="Public:public_header" />
+<div class="container" style="margin-top:60px;">
+	<div class="row">
+	<!--左边栏start-->
+        <div class="span8">
+			<!--创建圈子start-->			
+			<div id="legend" class="">
+				<legend class="">创建圈子</legend>
+			</div>
+			<ul class="pager">
+				<li class="" id="one-step">
+					<a href="javascript:void(0);">第一步</a>
+				</li>
+				<li class="disabled" id="two-step">
+					<a href="javascript:void(0);">第二步</a>
+				</li>
+				<li class="disabled" id="three-step">
+					<a href="javascript:void(0);">完成</a>
+				</li>
+			</ul>
+			<form class="form-horizontal" id="creCircleForm" method="post" enctype="application/x-www-form-urlencoded" action="__APP__/Circle/doCreCircle">
+				<fieldset id="step-one">		
+					<div class="control-group">
+						<label class="control-label" for="inputCName">圈子名称</label>
+						<div class="controls">
+							<input type="text" name="CName" placeholder="写一个与众不同的名称吧" class="input-xlarge" id="inputCName" />
+							<p class="help-block">Supporting help text</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputCIntro">圈子简介</label>
+						<div class="controls">
+							<div class="textarea">
+								<textarea name="CIntro" placeholder="圈子简介不要写的太多啊" class="input-xlarge" id="inputCIntro"></textarea>
+								<p class="help-block">Supporting help text</p>
+							</div>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">圈子类型</label>
+						<div class="controls">
+							<select name="CType" class="input-xlarge">
+								<option value="0">普通圈</option>
+								<option value="1">朋友圈</option>
+							</select>
+							<p class="help-block">Supporting help text</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputCTags">圈子标签</label>
+						<div class="controls">
+							<input type="text" name="CTags" placeholder="写几个关于该圈子的标签吧" class="input-xlarge" id="inputCTags" />
+							<p class="help-block">Supporting help text</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">圈子LOGO</label>
+						<div class="controls">
+							<{:W('Attach',array('file_type'=>'image', 'app_name'=>'public', 'table'=>'circle'))}>
+							<p class="help-block">Supporting help text</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<div class="btn btn-primary" id="step-one-next">下一步</div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="step-two" style="display:none;">		
+					<div class="control-group">
+						<label class="control-label" for="inputCPhone">联系电话</label>
+						<div class="controls">
+							<input type="text" name="CPhone" placeholder="方便你的圈成员联系你" class="input-xlarge" id="inputCPhone" />
+							<p class="help-block">Supporting help text</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputCQQ">QQ</label>
+						<div class="controls">
+							<input type="text" name="CQQ" placeholder="写上你的QQ" class="input-xlarge" id="inputCQQ" />
+							<p class="help-block">Supporting help text</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<button class="btn btn-primary" id="cir-create">创建</button>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="step-three" style="display:none;">
+					创建成功
+				</fieldset>
+			</form>
+			
+			<!--创建圈子end-->
+		</div>
+        <!--左边栏end-->
+		
+		<!--右边栏start-->
+        <div class="span4">
+			<div class="hero-unit">
+				<h1 class="text-center">
+					<!--标签展示start-->
+					这里放置圈子的标签<!--TODO:=============================================================================-->
+                    <!--标签展示start-->
+				</h1>
+			</div>
+		</div>
+        <!--右边栏end-->
+        
+	</div>
+</div>
+<script>
+$(function(){
+	// 点击第一步
+	$('#one-step').click(function(){
+		$('#step-one').show('fast', function(){
+			$('#step-two').hide('fast');
+			$('#step-three').hide('fast');
+		});
+	});
+	// 点击第二步
+	$('#two-step').click(function(){
+		if(!$('#two-step').hasClass('disabled')){
+			$('#step-two').show('fast', function(){
+				$('#step-one').hide('fast');
+				$('#step-three').hide('fast');
+			});
+		}
+	});
+	// 点击第三步
+	$('#three-step').click(function(){
+		if(!$('#three-step').hasClass('disabled')){
+			$('#step-three').show('fast', function(){
+				$('#step-two').hide('fast');
+				$('#step-one').hide('fast');
+			});
+		}
+	});
+	var errorMsg = new Array();
+	errorMsg = ['名称', '简介', '标签', 'LOGO', '联系方式', 'QQ'];
+	var messageFun = function(msg){
+		$.scojs_message('圈子'+msg+'不能为空', $.scojs_message.TYPE_ERROR);
+	}
+	var options = {
+        beforeSubmit :  preSubmit,  // pre-submit callback
+        success      :  postSubmit,  // post-submit callback
+		//dataType     :  'json',        // 'xml', 'script', or 'json' (expected server response type)
+    };
+	
+	function preSubmit(formData, jqForm, options) {
+		// TODO:检测第二步信息
+		if(!$('#inputCPhone').val()){
+			messageFun(errorMsg[4]);
+			return false;
+		}else if(!$('#inputCQQ').val()){
+			messageFun(errorMsg[5]);
+			return false;
+		}		
+    	return true;
+	}
+	// post-submit callback
+	function postSubmit(responseText, statusText)  {
+		if(responseText.status == 1){
+			$('#three-step').removeClass('disabled');
+			$('#step-two').hide('fast', function(){
+				$('#step-three').show('fast');
+			});
+			//$.scojs_message('创建活动成功', $.scojs_message.TYPE_OK);
+		}else{
+			$.scojs_message(responseText.info, $.scojs_message.TYPE_ERROR);
+		}
+	}
+	$('#creCircleForm').submit(function(){
+		$(this).ajaxSubmit(options); 
+		return false; 
+	});
+	
+	
+	// 点击下一步按钮
+	$('#step-one-next').click(function(){
+		// TODO:检测第一步信息
+		if(!$('#inputCName').val()){
+			messageFun(errorMsg[0]);
+		}else if(!$('#inputCIntro').val()){
+			messageFun(errorMsg[1]);
+		}else if(!$('#inputCTags').val()){
+			messageFun(errorMsg[2]);
+		}else if(!$(":hidden[name='aid[]']").val()){
+			messageFun(errorMsg[3]);
+		}else{
+			$('#two-step').removeClass('disabled');
+			$('#step-one').hide('fast', function(){
+				$('#step-two').show('fast');
+			});
+		}
+	});
+});
+</script>
+<include file="Public:public_footer" /> 

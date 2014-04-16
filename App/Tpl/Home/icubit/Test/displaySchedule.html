@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<title>Insert title here</title>
+</head>
+<body>
+<table class="table table-bordered">
+              
+              <tbody>
+              <tr>
+              	<td></td>
+                  <td >星期一</td>
+                  <td>星期二</td>
+                  <td>星期三</td>
+                  <td>星期四</td>
+                  <td>星期五</td>
+                  <td>星期六</td>
+                  <td>星期日</td>
+                </tr>
+                <volist name="sbox" id="vo" key="i">
+                <tr>
+                  <td><{$i}></td>
+                  <volist name="vo" id="vo2" key="j">
+                  <php>if($vo2 == 0){</php>
+                  	<td ></td>
+                  <php>}elseif(is_array($vo2)){</php>
+                  	
+                  	<td rowspan="<{$vo2['rowspan']}>">
+                  	<a href="">
+						<{$vo2.name}><br>
+						<{$vo2.teacher}><br>
+						<{$vo2.location}>
+						</a>
+					</td>
+					
+                  <php>}else{}</php>
+                  
+                  </volist>
+                  
+                </tr>
+                </volist>
+                
+              </tbody>
+            </table>
+</body>
+</html>

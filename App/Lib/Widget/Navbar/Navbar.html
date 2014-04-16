@@ -1,0 +1,48 @@
+
+<!--导航条-->
+<header class="navbar navbar-inverse navbar-fixed-top yf-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="__APP__" class="navbar-brand">安工大圈</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="__APP__"><i class="icon-home"></i>&nbsp;首页</a> </li>
+        <li> <a href="__GROUP__/Circle/circle"><i class="icon-circle-blank"></i>&nbsp;圈子</a> </li>
+		<li> <a href="__GROUP__/Activity/campusActivity"><i class="icon-circle-blank"></i>&nbsp;活动</a> </li>
+        <li> <a href=""><i class="icon-pencil"></i>&nbsp;应用</a> </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><i class="icon-user"></i><{$Think.session.userInfo.nickname}></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope"></i>&nbsp;消息<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="__GROUP__/Message">@我的<span class="badge pull-right"><{$unread.unread_atme}></span></a></li>
+          <li><a href="#"><i class="icon-comment"></i>&nbsp;评论<span class="badge pull-right"><{$unread.unread_comment}></span></a></li>
+          <li><a href="#"><i class="icon-bell"></i>&nbsp;系统消息<span class="badge pull-right"><{$unread.unread_notify}></span></a></li>
+          <li class="divider"></li>
+          <li><a href="#">其他</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-wrench"></i>&nbsp;账号<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="__APP__/Account/baseInfo"><i class="icon-cog"></i>&nbsp;设置</a></li>
+          <li><a href="<{$user_info.user_url}>">用户中心</a></li>
+		  <li><a href="__APP__/Activity/manageAct">管理活动</a></li>
+          <php> if($_SESSION['administrator']){</php>
+          <li><a href="__ROOT__/index.php/Admin/Index/index">管理后台</a></li>
+          <php> }</php>
+          <li class="divider"></li>
+          <li><a href="__APP__/Login/doLogout"><i class="icon-off"></i>&nbsp;退出</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    </nav>
+  </div>
+</header>
+<!--导航条-->
+
+

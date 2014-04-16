@@ -1,0 +1,54 @@
+
+<footer >
+  <div class="container">
+    <blockquote  class="pull-right">
+      <p>人的生命是有限的,可是,为人民服务是无限的,我要把有限的生命,投入到无限的为人民服务之中去.</p>
+      <small class="text-right">雷锋</small> </blockquote>
+    <div style="clear:both;">
+      <hr />
+      <h4 class="text-center">皖ICP备13001806号-1&nbsp;&nbsp;&nbsp;&nbsp; powered by <a href="http://www.yunfou.net" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="云否">yunfou</a></h4>
+    </div>
+  </div>
+</footer>
+<a href="javascript:void(0);" event-node="post_feed" event-args="feed_type=1&amp;type=repost&amp;feed_id=88" class="btn">
+        分享        </a>
+<script src="__PUBLIC__/Js/module/module.common.js"></script> 
+<script>
+$(function(){
+    // tooltip demo
+    $('body').tooltip({
+      selector: "a[data-toggle=tooltip]"
+    });
+	/*
+	$("a[data-toggle=popover]")
+      .popover()
+      .click(function(e) {
+        e.preventDefault()
+      });
+	*/  
+	var add= '<div class="row"   id="upload_pic"><ul class="thumbnails"><li class="span3"><div class="thumbnail"> <img data-src="holder.js/135x135" alt="1350x135" style="width: 135px; height: 135px;" src=""> </div></li></ul></div>';
+	$('#insert_pic').popover({
+	title:'图片上传',
+	placement:'bottom',
+	html:true,
+	content:add,
+	trigger:'click',
+	});
+	
+  })
+
+  $(document).ready(function(){
+		 $.scrollUp({
+			  scrollName: 'scrollUp', // Element ID
+			  topDistance: '400', // Distance from top before showing element (px)
+			  topSpeed: 300, // Speed back to top (ms)
+			  animation: 'fade', // Fade, slide, none
+			  animationInSpeed: 200, // Animation in speed (ms)
+			  animationOutSpeed: 200, // Animation out speed (ms)
+			  scrollText: '', // Text for element
+			  activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+		});
+	});
+</script> 
+<a id="scrollUp" title="" style="position: fixed; z-index: 2147483647; display: block;"></a>
+</body></html>

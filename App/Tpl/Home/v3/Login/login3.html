@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<script src="__PUBLIC__/Js/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Js/jquery.form.js"></script>
+<script src="__PUBLIC__/Js/jquery.sft.js"></script>
+<style>
+/*sft插件样式*/
+body {
+	overflow: hidden;
+	
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.window {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.success {
+	background-color: #5cb85c;
+}
+.primary {
+	background-color: #428bca;
+}
+.info {
+	background-color: #5bc0de;	
+}
+.warning {
+	background-color: #f0ad4e;
+}
+.danger {
+	background-color: #d9534f;
+}
+
+.back ,.origin {
+	position:fixed;
+}
+.back {
+	left:0; 
+	bottom:0;
+}
+.origin {
+	right:0; 
+	bottom:0;
+}
+/*sft插件样式*/
+.signin-box {
+	max-width: 600px;
+	padding: 15px;
+	margin: 200px auto 0 auto;
+}
+.left-verical-line {
+	border-left: solid 1px #E3E4E6;
+}
+.right-verical-line {
+	border-right: solid 1px #E3E4E6;
+}
+section > div{
+	text-align:center;
+	margin:200px auto;
+	max-width:750px;
+}
+</style>
+<script>
+var SITE_URL  = '<{$SITE_URL}>';
+$(document).ready(function(){
+	var $windows = $('.window');
+	$windows.sft();
+	
+	$('#pre').click(function(){
+		$.pre();	
+	});
+	//提交学号密码
+	 var options = { 
+        target:        null,   // target element(s) to be updated with server response 
+        beforeSubmit:  function(formData, jqForm, options){
+			for (var i=0; i < formData.length; i++) { 
+				if (!formData[i].value) { 
+					alert('不能为空'); 
+					return false; 
+				} 
+    		} 
+			return true;
+		}, 
+        success:     function(msg){
+			
+			if(msg.status == '1'){
+				$.moveTo('4-0');
+			}else{
+				alert(msg.info);	
+			}
+		},  // post-submit callback 
+ 
+        // other available options: 
+        url:       SITE_URL+'/index.php/Login/getAccess' ,        // override for form's 'action' attribute 
+        type:      'post'  ,      // 'get' or 'post', override for form's 'method' attribute 
+        dataType:  'json'   ,     // 'xml', 'script', or 'json' (expected server response type) 
+        clearForm: true        // clear all form fields after successful submit 
+        //resetForm: true        // reset the form after successful submit 
+ 
+        // $.ajax options can be used here too, for example: 
+        //timeout:   3000 
+    }; 
+ 
+    // bind form using 'ajaxForm' 
+    $('#form2').ajaxForm(options); 
+	
+	var options2 = { 
+        target:        null,   // target element(s) to be updated with server response 
+        beforeSubmit:  function(formData, jqForm, options){
+			for (var i=0; i < formData.length; i++) { 
+				if (!formData[i].value) { 
+					alert('不能为空'); 
+					return false; 
+				} 
+    		} 
+			return true;
+		}, 
+        success:     function(msg){
+			
+			if(msg.status == '1'){
+				$.moveTo('5-0');
+			}else{
+				alert(msg.info);	
+			}
+		},  // post-submit callback 
+ 
+        // other available options: 
+        url:       SITE_URL+'/index.php/Login/doReg' ,        // override for form's 'action' attribute 
+        type:      'post'  ,      // 'get' or 'post', override for form's 'method' attribute 
+        dataType:  'json'   ,     // 'xml', 'script', or 'json' (expected server response type) 
+        clearForm: false        // clear all form fields after successful submit 
+        //resetForm: true        // reset the form after successful submit 
+ 
+        // $.ajax options can be used here too, for example: 
+        //timeout:   3000 
+    }; 
+	$('#form3').ajaxForm(options2); 
+});
+// pre-submit callback 
+function showRequest(formData, jqForm, options) { 
+    // formData is an array; here we use $.param to convert it to a string to display it 
+    // but the form plugin does this for you automatically when it submits the data 
+    //var queryString = $.param(formData); 
+ 	for (var i=0; i < formData.length; i++) { 
+        if (!formData[i].value) { 
+            alert('不能为空'); 
+            return false; 
+        } 
+    } 
+    // jqForm is a jQuery object encapsulating the form element.  To access the 
+    // DOM element for the form do this: 
+    // var formElement = jqForm[0];
+    return true; 
+} 
+
+function showResponse(msg)  {  
+ 	if(msg.status == '1'){
+		$.moveTo('4-0');
+	}else{
+		alert(msg.info);	
+	}
+   
+} 
+ 
+</script>
+<title>登录</title>
+</head>
+
+<body onmousewheel="return false;">
+
+<section class="window" coor="0-0" >
+  <div>
+    <h1>安工大圈</h1>
+    <h3>是一个基于真实关系的社交网站</h3>
+    <h3>是一个基于真实关于真实关于真实关系的社交网站</h3>
+    <button type="button" class="btn btn-lg" data-toggle="sft" data-moveTo="0-1" style=" margin-right:60px;">&nbsp;&nbsp;登陆&nbsp;&nbsp;</button>
+    <button type="button" class="btn btn-lg" data-toggle="sft" data-moveTo="1-0">&nbsp;&nbsp;注册&nbsp;&nbsp;</button>
+  </div>
+</section>
+<section class="window" coor="1-0" >
+  <div >
+    <h1>你是一名ahuter么？</h1>
+    <button type="button" class="btn btn-lg" data-toggle="sft" data-moveTo="2-0" style=" margin-right:60px;">&nbsp;&nbsp;嗯，是&nbsp;&nbsp;</button>
+    <button type="button"  class="btn btn-lg" data-toggle="sft" data-moveTo="1-1">&nbsp;&nbsp;不是&nbsp;&nbsp;</button>
+  </div>
+</section>
+<section class="window" coor="1-1">
+  <div >
+    <h1>留下你想说的话吧！</h1>
+    <textarea></textarea>
+    <button type="button"  class="btn btn-lg">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+  </div>
+</section>
+<section class="window" coor="2-0">
+  <div>
+    <h1>说在前头的话：</h1>
+    <h3>说在前头的话：说在前头的话：说在前头的话：说在前头的话：说在前头的话：说在前头的话：说在前头的话：</h3>
+    <button type="button" class="btn btn-lg" data-toggle="sft" data-moveTo="3-0" style=" margin-right:60px;">&nbsp;&nbsp;同意&nbsp;&nbsp;</button>
+    <button type="button" id="refuse" class="btn btn-lg">&nbsp;&nbsp;不同意&nbsp;&nbsp;</button>
+  </div>
+  <a class="back" href="" style="position:relative;left:0; bottom:0;">←back</a>
+</section>
+<section  class="window" coor="3-0">
+  <div >
+    <h1>说在前头的话：</h1>
+    <form id="form2" class="form-horizontal" role="form" style=" padding:10px;">
+      <div class="form-group">
+        <label for="inputEmail1" class="col-lg-2 control-label">学号</label>
+        <div class="col-lg-10">
+          <input name="stu_id" type="text" class="form-control" id="inputEmail1" placeholder="学号" autofocus>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword1" class="col-lg-2 control-label">密码</label>
+        <div class="col-lg-10">
+          <input name="pwd" type="password" class="form-control" id="inputPassword1" placeholder="教务系统密码">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+          <button type="submit" class="btn">验证</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="window" coor="4-0">
+	 <form id="form3" method="post" class="col-lg-8 form-horizontal right-verical-line" role="form" style=" padding:10px;">
+     <div class="form-group">
+          <label for="nickname" class="col-lg-2 control-label">昵称</label>
+          <div class="col-lg-10">
+            <input type="text" name="nickname" class="form-control" id="nickname" placeholder="取个名字吧" autofocus>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail1" class="col-lg-2 control-label">邮箱</label>
+          <div class="col-lg-10">
+            <input type="text" name="email" class="form-control" id="inputEmail1" placeholder="邮箱" autofocus>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword1" class="col-lg-2 control-label">密码</label>
+          <div class="col-lg-10">
+            <input type="password" name="credential"  class="form-control" id="inputPassword1" placeholder="密码">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <button type="submit" class="btn">确 认</button>
+          </div>
+        </div>
+      </form>
+</section>
+
+<section class="window" coor="5-0">
+  注册成功，请去邮箱激活账号，<a href="__APP__">登入</a>
+</section>
+
+<section class="window" coor="0-1">
+  <div class="signin-box ">
+    <div class="row">
+    
+      <form id="form1" action="__URL__/doLogin" method="post" class="col-lg-8 form-horizontal right-verical-line" role="form" style=" padding:10px;">
+        <div class="form-group">
+          <label for="inputEmail1" class="col-lg-2 control-label">账号</label>
+          <div class="col-lg-10">
+            <input type="text" name="identity" class="form-control" id="inputEmail1" placeholder="邮箱/学号" autofocus>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword1" class="col-lg-2 control-label">密码</label>
+          <div class="col-lg-10">
+            <input type="password" name="credential"  class="form-control" id="inputPassword1" placeholder="密码">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <button type="submit" class="btn btn-block">确 认</button>
+          </div>
+        </div>
+      </form>
+      <div class="col-lg-4 "><a id='pre'>上一步</a>没有账号？<a data-toggle="sft" data-moveTo="0-0&1-0">点击注册 </a></div>
+    </div>
+  </div>
+  
+</section>
+<a class="back" href="">←返回</a>
+<a class="origin" href="" data-toggle="sft" data-moveTo="0-0">回到起点→</a>
+</body>
+</html>

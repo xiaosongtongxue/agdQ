@@ -1,0 +1,87 @@
+<include file="Public:public_header" />
+
+<div class="container" style="margin-top:60px;">
+    <!--活动专题-->
+	<div class="row">
+		<div class="span8">
+			<div class="hero-unit">
+				<h1 class="text-center">
+					<{$activityInfo['title']}><!--活动标题-->
+				</h1>
+				<p>
+					<{$activityInfo['intro']}><!--活动简介-->
+				</p>
+			</div>
+            <php>
+            	if(is_array($posters)){
+			</php>
+            	<!--活动图片展示start-->
+                <div class="carousel slide" id="carousel-356772">
+                    <ol class="carousel-indicators">
+                        <volist name="posters" id="vo" key="num">
+                            <php>
+                                if($num == 1){
+                                    echo '<li data-slide-to="'.($num-1).'" data-target="#carousel-356772" class="active"></li>';
+                                }else{
+                                    echo '<li data-slide-to="'.($num-1).'" data-target="#carousel-356772"></li>';
+                                }
+                            </php>
+                        </volist>
+                    </ol>
+                    <div class="carousel-inner">
+                        <volist name="posters" id="vo" key="num">
+                            <php>
+                                if($num == 1){
+                                    echo '<div class="item active">';
+                                }else{
+                                    echo '<div class="item">';
+                                }
+                            </php>
+                                <center>
+                                    <img alt="" src="<{$vo.save_url}><{$vo.save_name}>" />
+                                </center>
+                            </div>
+                        </volist>
+                    </div>
+                    <a data-slide="prev" href="#carousel-356772" class="left carousel-control">‹</a> 
+                    <a data-slide="next" href="#carousel-356772" class="right carousel-control">›</a>
+                </div>
+                <!--活动图片展示end-->
+			<php>}</php><!--if结束-->
+            
+            <p>
+            	<h1 class="media-heading">活动内容</h1>
+            </p>
+			<p class="lead">
+				<{$activityInfo['content']}>
+			</p>
+			
+			<address> 
+             	<strong>活动地点</strong><br /> 
+            	<{$activityInfo['address']}>
+            </address>
+			
+			<!--文字标签start-->
+			<address> 
+             	<strong>标签</strong><br />
+					<volist name="tags" id="vo" key="num">
+						<volist name="vo" id="li">
+							<span class="label badge-info"><{$li}></span>&nbsp;
+						</volist>
+					</volist>
+				</address>
+            <!--文字标签end-->
+			
+			<!--此处添加评论start-->
+	   			<!--// TODO:======================================================================================================-->
+    		<!--此处添加评论end-->
+		</div>
+		
+		<div class="span4">
+			<div class="hero-unit">
+				右边展示
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:public_footer" /> 

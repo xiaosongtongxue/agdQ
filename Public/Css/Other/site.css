@@ -1,0 +1,118 @@
+/*  
+ *全局样式
+ *说明：为了使该文件的css样式优先级高于bootscrap,应该在bootscrap.css之后引入
+ */
+body {
+	background: url(../Images/f.jpg);
+}
+
+footer {
+	background-color:#f5f5f5;
+	border-top:1px solid #e5e5e5; 
+	margin-top:70px; 	
+	padding-top:30px; 
+}
+textarea {
+	resize:none;
+	width:100%;
+	box-sizing:border-box;
+}
+
+#scrollUp {
+	/*
+	position:fixed;
+	z-index: 2147483647;
+	display: block;
+	*/
+	bottom: 20px;
+	right: 160px;
+	height: 40px;  /* Height of image */
+	width: 40px; /* Width of image */
+	background: url(../Images/strollUP.png) no-repeat;
+	cursor: pointer;
+}
+
+/*功能类start*/
+.main-wrap {
+	margin-top:60px; 
+	background-color:#fff; 
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.widget {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 14px 10px;
+	/*background-color: #fff;*/
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.sidebar {
+	background:url(../Images/body_bg1.jpg) repeat;
+}
+
+.panel {
+	position: relative;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/*以下是带箭头的box*/
+.arrow_box {
+	position: relative;
+	background: #F9FAFA;
+	border: 1px solid #DDDDDD;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	box-sizing:border-box;
+	padding:5px;
+	margin-bottom:15px;
+}
+
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(249, 250, 250, 0);
+	border-bottom-color: #F9FAFA;
+	border-width: 7px;
+	left: 7%;
+	margin-left: -7px;
+}
+.arrow_box:before {
+	border-color: rgba(221, 221, 221, 0);
+	border-bottom-color: #DDDDDD;
+	border-width: 8px;
+	left: 7%;
+	margin-left: -8px;
+}
+/*功能类end*/
+/*定制类start*/
+.row-fluid,.row {
+	overflow:hidden;
+}
+.main-wrap .row-fluid > [class*="span"],.main-wrap .row > [class*="span"]{
+	padding:15px;
+	margin-bottom:-10000px;
+	padding-bottom:10000px;
+}
+.row-fluid [class*="span"]:first-child {
+  padding-right: 0;
+}
+/*定制类end*/

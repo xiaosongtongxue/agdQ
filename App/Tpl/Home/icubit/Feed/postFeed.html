@@ -1,0 +1,58 @@
+<volist name="feeds" id="vo" >
+  <li class="media" id="feed<{$vo.feed_id}>" model-node='feed'> <a class="pull-left" href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src=""> </a>
+    <div class="media-body" model-node="feed_body">
+    <div model-node="feed_main" style=" min-height:65px;">
+    <h4 class="media-heading"><a href="__APP__/User/profile?uid=<{$vo.uid}>"><{$vo.uname}></a></h4>
+    <p style=" min-height:40px;"><{$vo.feed_content}></p>
+   <!--原feed内容-->
+    <php>if($vo['type'] == 'repost'){</php>
+    <php>if($vo['source_feed_del']){</php>
+    <div class="well">资源已被删除</div>
+    <php>}else{</php>
+  <li class="media" id="feed<{$vo.source_feed_info.feed_id}>" model-node='feed'> <a class="pull-left" href="#"> <img class="media-object" data-src="holder.js/32x32" alt="32x32" style="width: 32px; height: 32px;" src=""> </a>
+    <div class="media-body" model-node="feed_body">
+      <div model-node="feed_main" style=" min-height:65px;">
+        <h4 class="media-heading"><a href="__APP__/User/profile?uid=<{$vo.uid}>"><{$vo.source_feed_info.uname}></a></h4>
+        <p style=" min-height:40px;"><{$vo.source_feed_info.feed_content}></p>
+        <ul class="inline">
+          <li class="pull-left"><i class="icon-time"></i><{$vo.source_feed_info.publish_time}></li>
+          <li class="pull-right"><a event-node="comment" href="javascript:void(0)" event-args='feed_id=<{$vo.source_feed_info.feed_id}>'><i class="icon-comment"></i><span><{$vo.source_feed_info.comment_count}></span></a></li>
+          <li class="pull-right"><a href="javascript:;" event-node="share" event-args='feed_id=<{$vo.source_feed_info.feed_id}>&type=repost&table=feed'><i class="icon-share" ></i><{$vo.source_feed_info.repost_count}></a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <php>}</php>
+  <php>}</php>
+     <!--原feed内容-->
+  <ul class="inline">
+    <li class="pull-left"><i class="icon-time"></i><{$vo.publish_time}></li>
+    <php>if($vo['del_display']){</php>
+    <li class="pull-right"><a event-node="del_feed" href="javascript:void(0)" event-args='feed_id=<{$vo.feed_id}>'><i class="icon-trash"></i></a></li>
+    <php>}</php>
+    <li class="pull-right"><a event-node="comment" href="javascript:void(0)" event-args='feed_id=<{$vo.feed_id}>'><i class="icon-comment"></i><span><{$vo.comment_count}></span></a></li>
+    <php>if($vo['isCollected']){</php>
+    <li class="pull-right"><a href="javascript:;" onclick="core.plugInit('collection',this,'<{$vo.feed_id}>','feed')" rel="remove"><span>取消收藏</span><span><{$vo.collection_count}></span></a></li>
+    <php>}else{</php>
+    <li class="pull-right"><a href="javascript:;" onclick="core.plugInit('collection',this,'<{$vo.feed_id}>','feed')" rel="add"><span>收藏</span><span><{$vo.collection_count}></span></a></li>
+    <php>}</php>
+    <li class="pull-right"><a href="javascript:;" event-node="share" event-args='feed_id=<{$vo.feed_id}>&type=repost&table=feed'><i class="icon-share" ></i><{$vo.repost_count}></a></li>
+  </ul>
+  </div>
+  <!-- 评论-->
+  
+  <div style="display:none;" model-node="feed_comment">
+    <hr style="clear:both"/>
+    <div class="" model-node="mini_editor">
+      <textarea class="span6" rows="2"  event-node="mini_editor_textarea" style="resize:none;"></textarea>
+      <a class="feed-comment-box" href="javascript:void(0);"  event-node="do_comment"  event-args='feed_id=<{$vo.feed_id}>&to_comment_id=0&to_uid=0' >
+      <button class="btn">回复</button>
+      </a> </div>
+    <div model-node="comment_list"></div>
+  </div>
+  <!-- 评论-->
+  
+  </div>
+  <hr />
+  </li>
+</volist>

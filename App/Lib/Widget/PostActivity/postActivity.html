@@ -1,0 +1,109 @@
+<!--发布活动start-->
+<form id="editActForm" class="form-horizontal" role="form" method="post" enctype="application/x-www-form-urlencoded" action="<{:U('Activity/doPostActivity')}>">
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="inputActTitle">活动标题</label>
+        <div class="col-sm-offset-1 col-md-8">
+        	<input value="<{$actInfo.title}>" type="text" class="form-control" name="ActTitle" id="inputActTitle" placeholder="输入活动的标题">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="inputActIntro">活动简介</label>
+        <div class="col-sm-offset-1 col-md-8">
+            <textarea rows="2" class="form-control" name="ActIntro" id="inputActIntro" placeholder="输入活动的简介（请控制在七十字之内）"><{$actInfo.intro}></textarea>
+        </div>
+	</div>
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="inputActContent">活动内容</label>
+		<div class="col-sm-offset-1 col-md-8">
+			<textarea id="ckeditor" name="ActContent" rows="10"></textarea>
+		</div>
+    </div>    
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="inputActAddress">活动地点</label>
+        <div class="col-sm-offset-1 col-md-8">
+            <textarea rows="2" class="form-control" name="ActAddress" id="inputActAddress" placeholder="输入活动的地点"><{$actInfo.address}></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="inputActTime">活动时间</label>
+        <div class="col-sm-offset-1 col-md-8">
+            <input value="<{$actInfo.time}>" type="text" class="form-control" name="ActTime" id="inputActTime" placeholder="输入活动的时间">
+        </div>
+    </div>
+    <div class="form-horizontal">
+    	<div class="form-group">
+        	<label class="col-md-2 control-label" for="inputActivityPoster">活动海报</label>
+			<div class="col-sm-offset-1 col-md-8">
+				<{:W('Attach',array('file_type'=>'image', 'app_name'=>'public', 'table'=>'activity'))}>
+			</div>
+		</div>
+	</div>
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="inputActTags">活动标签</label>
+        <div class="col-sm-offset-1 col-md-8">
+            <input value="<{$actInfo.tag}>" type="text" class="form-control" name="ActTags" id="inputActTags" placeholder="每个标签之间用逗号隔开,比如（社团,青春）">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-md-8">			
+            <!--<input type="submit" class="btn" id="previewAct" value="预览" />-->
+			<input type="submit" class="btn" id="actPublish" value="发布" />
+        </div>
+    </div>
+</form>
+
+<!--发布活动end-->
+<script src="__PUBLIC__/ckeditor/ckeditor.js"></script>
+<script src="__PUBLIC__/Js/jquery.form.js"></script>
+<script>
+$(function(){
+	CKEDITOR.replace( 'ckeditor', {
+		uiColor: '#FAFAFA',
+	});
+
+	var options = {
+        beforeSubmit :  preSubmit,  // pre-submit callback
+        success      :  postSubmit,  // post-submit callback
+		//dataType     :  'json',        // 'xml', 'script', or 'json' (expected server response type)
+    };
+	
+	// publish activity
+	$('#editActForm').submit(function(){
+        $(this).ajaxSubmit(options); 
+        return false; 
+    });
+
+	function preSubmit(formData, jqForm, options) {
+		// 错误信息提示
+		var errorMsg = new Array();
+		errorMsg = ['标题', '简介', '内容', '地点', '时间', '标签'];
+		// 检测不能为空~
+		for (var i=0; i < formData.length; i++) { 
+        	if (!formData[i].value) { 
+				alert('活动'+errorMsg[i]+'不能为空');
+           		//$.scojs_message('活动'+errorMsg[i]+'不能为空', $.scojs_message.TYPE_ERROR);
+				return false;
+        	}
+    	}
+		
+    	var formElement = jqForm[0];
+		if(formElement.ActIntro.value.length > 70){
+			alert('活动简介的字数超出七十个字了,请删减一部分！');
+			//$.scojs_message('活动简介的字数超出七十个字了,请删减一部分！', $.scojs_message.TYPE_ERROR);
+			return false;
+		}
+    	return true;
+	}
+	
+	// post-submit callback
+	function postSubmit(responseText, statusText)  {
+		if(responseText.status == 1){
+			alert('创建活动成功');
+			//$.scojs_message('创建活动成功', $.scojs_message.TYPE_OK);
+		}else{
+			alert(responseText.info);
+			//$.scojs_message(responseText.info, $.scojs_message.TYPE_ERROR);
+		}
+	}
+});
+</script>
